@@ -110,7 +110,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      thomas = import ./home.nix;
+      thomas = import ~/.config/home-manager/home.nix;
     };
   };
 
