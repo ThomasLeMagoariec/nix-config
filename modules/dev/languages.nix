@@ -2,7 +2,10 @@
 
 {
   environment.systemPackages = with pkgs; [
-    git
+    go
+    python3
+    python3Packages.pip
+    nodejs
   ];
 }
 

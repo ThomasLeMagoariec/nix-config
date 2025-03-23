@@ -3,7 +3,7 @@
 {
   imports = [
     ./editors.nix
-        # ./compilers.nix
+    ./languages.nix
     ./tools.nix
   ];
 }
