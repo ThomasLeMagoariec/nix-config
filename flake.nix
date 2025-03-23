@@ -1,23 +1,15 @@
 {
-  description = "Best NixOS config";
+  description = "A very basic flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    
-    # Import external modules
-    hyprland.url = "/home/thomas/coding/nix/flakes/modules/hypr";
-    dev.url = "/home/thomas/coding/nix/flakes/modules/dev";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = { self, nixpkgs, hyprland, dev, ... }@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-        ./configuration.nix
-        hyprland.nixosModules.default
-        dev.nixosModules.default
-      ];
-    };
+  outputs = { self, nixpkgs }: {
+
+    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
+
+    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
+
   };
 }
-
