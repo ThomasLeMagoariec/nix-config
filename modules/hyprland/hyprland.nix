@@ -13,6 +13,7 @@
     waybar      # Status bar
     wofi
     swaynotificationcenter
+    hyprshot
   ];
 
   # Enable seatd (Wayland session manager)
