@@ -30,7 +30,7 @@
         wl-clipboard
         luajitPackages.lua-lsp
         rnix-lsp
-    ]
+    ];
 
     viAliases = true;
     vimAliases = true;
