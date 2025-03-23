@@ -6,7 +6,7 @@
     python3
     python3Packages.pip
     nodejs
-    libgcc
+    gcc11
   ];
 }
 
