@@ -1,14 +1,17 @@
 {
-  description = "My NixOS Config";
+  description = "My NixOS Configuration";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  };
 
   outputs = { nixpkgs, ... } @ inputs: {
-    nixosConfigurations.my-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./modules/dev
+        ./configuration.nix  # Ensure this file exists
         ./modules/hyprland
+        ./modules/dev
       ];
     };
   };
