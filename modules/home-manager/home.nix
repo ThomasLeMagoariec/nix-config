@@ -24,7 +24,6 @@
     toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
   in {
     enable = true;
-
     extraPackages = with pkgs; [
         xclip
         wl-clipboard
@@ -38,9 +37,9 @@
 
     plugins = with pkgs.vimPlugins; [
         {
-            plugin = neo-tree-nvim
-            config = toLuaFile ~/.config/nvim/plugins/neo-tree.lua
-        }
+            plugin = neo-tree-nvim;
+            config = toLuaFile ~/.config/nvim/plugins/neo-tree.lua;
+        };
 
         nvim-lspconfig
 
