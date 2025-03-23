@@ -7,7 +7,7 @@
     home-manager = {
         url = "github:nix-community/home-manager";
         input.nixpkgs.follows = "nixpkgs";
-    }
+    };
   };
 
   outputs = { nixpkgs, ... } @ inputs:
@@ -30,5 +30,6 @@
         ];
       };
     };
+  };
 }
 
