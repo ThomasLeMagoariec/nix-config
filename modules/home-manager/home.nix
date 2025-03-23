@@ -39,7 +39,7 @@
     plugins = with pkgs.vimPlugins; [
         {
             plugin = neo-tree-nvim;
-            config = toLuaFile ~/.config/nvim/plugins/neo-tree.lua;
+            config = toLuaFile /home/thomas/.config/nvim/plugins/neo-tree.lua;
         };
 
         nvim-lspconfig
