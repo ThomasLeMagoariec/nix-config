@@ -45,9 +45,8 @@
         nvim-lspconfig
 
         nvim-cmp
-        nvim-cmp;
 
-        telescope-nvim;
+        telescope-nvim
 
         cmp_luasnip
         cmp-nvim-lsp
