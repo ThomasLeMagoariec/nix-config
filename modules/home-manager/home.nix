@@ -24,6 +24,7 @@
     toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
   in {
     enable = true;
+
     extraPackages = with pkgs; [
         xclip
         wl-clipboard
