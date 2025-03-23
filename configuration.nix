@@ -4,7 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      inputs.home-manager.nixosModule.home-manager
+      inputs.home-manager.nixosModules.home-manager
     ];
 
   # Bootloader.
