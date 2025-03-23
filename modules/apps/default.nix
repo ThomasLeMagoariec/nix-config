@@ -1,8 +1,8 @@
-
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-    obisidian
+  imports = [
+    ./productivity.nix
   ];
 }
+
