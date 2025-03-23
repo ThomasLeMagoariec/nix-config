@@ -152,7 +152,6 @@
      wine
      kitty
      unityhub
-     obsidian
 ];
 
   # Some programs need SUID wrappers, can be configured further or are
