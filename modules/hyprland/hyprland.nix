@@ -11,7 +11,7 @@
     hyprlock    # Lock screen
     hypridle    # Idle management
     waybar      # Status bar
-    rofi-wayland # Application launcher
+    wofi
     swaynotificationcenter
   ];
 
