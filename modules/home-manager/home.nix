@@ -40,7 +40,7 @@
         {
             plugin = neo-tree-nvim;
             config = toLuaFile /home/thomas/.config/nvim/plugins/neo-tree.lua;
-        };
+        }
 
         nvim-lspconfig
 
