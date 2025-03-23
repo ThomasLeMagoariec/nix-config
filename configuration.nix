@@ -1,9 +1,10 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   imports =
     [
       ./hardware-configuration.nix
+      inputs.home-manager.nixosModule.home-manager
     ];
 
   # Bootloader.
@@ -105,6 +106,13 @@
     };
   };
 };
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      thomas = import ./home.nix;
+    };
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.thomas = {

@@ -20,7 +20,7 @@
   in {
     nixosConfigurations = {
       myNixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit system; };
+        specialArgs = { inherit inputs system; };
         modules = [
           ./configuration.nix  # Ensure this file exists
           ./modules/hyprland
