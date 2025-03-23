@@ -12,6 +12,7 @@
         ./configuration.nix  # Ensure this file exists
         ./modules/hyprland
         ./modules/dev
+        ./modules/apps
       ];
     };
   };
