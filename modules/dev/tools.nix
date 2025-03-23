@@ -4,7 +4,6 @@
   environment.systemPackages = with pkgs; [
     neofetch
     tmux
-    home-manager
   ];
 }
 
