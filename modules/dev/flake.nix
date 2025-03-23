@@ -2,7 +2,7 @@
   description = "Dev tools";
 
   inputs = {
-        editors.url = "./editors.nix";
+        editors.url = "./editors";
   };
 
   outputs = { self, nixpkgs, editors, ... }@inputs: {
