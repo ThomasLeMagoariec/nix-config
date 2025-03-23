@@ -1,42 +1,15 @@
 {
   description = "Dev tools";
 
-  outputs = { nixpkgs, ... }: {
-    nixosModules.default = { config, pkgs, ... }: {
-      environment.systemPackages = with pkgs; [
+  inputs = {
+        editors.url = "./editors.nix";
+  };
 
-        # text editors
-        vim
-        neovim
-
-        # git stuff
-        git
-        git-lfs
-        lazygit
-
-        # package managers, compilers and languages
-        gcc
-        clang-tools
-        python3
-        go
-        nodejs
-        cargo
-        dotnet-sdk
-        octave
-
-        # virtualization
-        libvirt
-        virt-manager
-        qemu
-        quickemu
-        kvmtool
-        vagrant
-        vagrant-libvirt
-        virtualbox
-
-        # random stuff
-        gnumake
-        tmux
+  outputs = { self, nixpkgs, editors, ... }@inputs: {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        editors.nixosModules.default
       ];
     };
   };
