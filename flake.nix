@@ -13,6 +13,7 @@
         ./modules/hyprland
         ./modules/dev
         ./modules/apps
+        ./modules/random
       ];
     };
   };
