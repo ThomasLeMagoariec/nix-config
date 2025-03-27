@@ -86,10 +86,15 @@
   # services.xserver.libinput.enable = true;
 
   # Custom stuff
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   services.flatpak.enable = true;
   users.defaultUserShell=pkgs.zsh;
   virtualisation.docker.enable = true;
+
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
 
   virtualisation.libvirtd = {
   enable = true;
