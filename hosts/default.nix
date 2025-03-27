@@ -5,6 +5,9 @@
     ../modules/dev
     ../modules/hyprland
     ../modules/tools.nix
+    ../modules/apps
+    ../modules/home-manager
+    ../modules/random
   ];
 
   # Common settings
