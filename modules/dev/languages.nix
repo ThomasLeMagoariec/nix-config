@@ -7,6 +7,9 @@
     python3Packages.pip
     nodejs
     gcc11
+
+    pyright
+
   ];
 }
 
