@@ -5,6 +5,9 @@
     neofetch
     tmux
     ollama
+    poetry
+    pre-commit
+    nwg-displays
   ];
 }
 

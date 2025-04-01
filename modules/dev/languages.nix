@@ -9,7 +9,7 @@
     gcc11
 
     pyright
-
+    dotnet-sdk_9
   ];
 }
 
