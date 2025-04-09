@@ -142,6 +142,7 @@
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
+        home-manager
         i3status
         dmenu
         i3lock
