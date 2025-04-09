@@ -6,10 +6,13 @@
 
     home.stateVersion = "24.11";
 
-    home.packages = [];
+    home.packages = with pkgs; [
+        wofi
+    ];
 
     home.file = {
         ".p10k.zsh".source = ./dotfiles/p10k.zsh;
+        ".config/wofi/config".source = ".dotfiles/wofi.config"
     };
 
     home.sessionVariables = {
@@ -17,6 +20,8 @@
     };
 
     programs = {
+        wofi.enable = true;
+        
         zsh = {
             enable = true;
             enableCompletion = true;
@@ -52,10 +57,11 @@
 
             oh-my-zsh = {
                 enable = true;
-                plugins = [ "thefuck" "z" "sudo"];
+                plugins = [ "z" "sudo"];
             };
 
         };
+
     };
 
     programs.home-manager.enable = true;
