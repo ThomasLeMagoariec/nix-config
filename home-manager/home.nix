@@ -36,7 +36,7 @@
                 code = "cd ~/coding";
                 epita = "cd ~/coding/epita";
 
-                nvim='nix run ~/coding/nix/nvim-config/';
+                nvim="nix run ~/coding/nix/nvim-config/";
 
                 e = "exit";
             };
