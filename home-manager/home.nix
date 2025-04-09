@@ -52,7 +52,7 @@
 
             oh-my-zsh = {
                 enable = true;
-                plugins = [ "git" "z" "sudo"];
+                plugins = [ "thefuck" "z" "sudo"];
             };
 
         };
