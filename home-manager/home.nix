@@ -18,8 +18,7 @@
     zsh = {
       enable = true;
       enableCompletion = true;
-      syntaxHighlighting.enable = true;  # ✅ fixed spelling
-      # autosuggestions.enable = true;   ❌ remove this
+      syntaxHighlighting.enable = true;
 
       shellAliases = {
         gs = "git status";
