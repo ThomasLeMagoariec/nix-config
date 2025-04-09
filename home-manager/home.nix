@@ -32,10 +32,8 @@
                 gac = "git add -A && git commit -m ";
                 gaca = "git add -A && git commit -m 'auto'";
                 gacp = "git add -A && git commit -m 'auto' && git push";
-
                 code = "cd ~/coding";
                 epita = "cd ~/coding/epita";
-
                 e = "exit";
             };
 
