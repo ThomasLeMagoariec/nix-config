@@ -28,6 +28,7 @@
       };
 
       initExtra = ''
+        source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
         export EDITOR=nvim
         bindkey '^P' up-history
         bindkey '^N' down-history
@@ -44,9 +45,6 @@
         }
       ];
 
-      promptInit = ''
-        source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-      '';
     };
   };
 
