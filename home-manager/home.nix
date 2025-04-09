@@ -12,7 +12,7 @@
 
     home.file = {
         ".p10k.zsh".source = ./dotfiles/p10k.zsh;
-        ".config/wofi/config".source = ".dotfiles/wofi.config"
+        ".config/wofi/config".source = ./dotfiles/wofi.config;
     };
 
     home.sessionVariables = {
