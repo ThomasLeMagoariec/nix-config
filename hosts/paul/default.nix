@@ -5,6 +5,7 @@
     # is basically same as mine without hyprland and misc stuff
     
     imports = [
+        ../../configuration.nix
         ../../modules/apps/default.nix
         ../../modules/dev/default.nix
     ];
