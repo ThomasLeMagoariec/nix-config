@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, hostRole ... }:
 
 {
     options.dev.minimal.enable = lib.mkEnableOption "Enable minimal dev environment";
@@ -15,6 +15,8 @@
             gcc11                   # C/C++
 
             pyright                 # python LSP
+        ] ++ lib.otionals (hostRole == "paul") [
+            helix
         ];
     };
 }
