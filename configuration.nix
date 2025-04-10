@@ -20,7 +20,6 @@
 
     security.rtkit.enable = true; # no clue what this is so won't touch it
 
-    virtualisation.docker.enable = true;
 
     nix.settings = {
         experimental-features = [ "nix-command" "flakes" ];
