@@ -26,6 +26,12 @@
         ".config/hypr/rose_pine_contourline.png".source = ./dotfiles/hypr/rose_pine_contourline.png;
         ".config/hypr/smth_beautiful.jpg".source = ./dotfiles/hypr/smth_beautiful_.jpg;
 
+        # waybar config
+        ".config/waybar/config.jsonc".source = ./dotfiles/waybar/config.jsonc;
+        ".config/waybar/network_menu.xml".source = ./dotfiles/waybar/network_menu.xml;
+        ".config/waybar/power_menu.xml".source = ./dotfiles/waybar/power_menu.xml;
+        ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
+
     };
 
     home.sessionVariables = {
