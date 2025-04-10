@@ -8,6 +8,7 @@
     poetry
     pre-commit
     nwg-displays
+    caligula
   ];
 }
 
