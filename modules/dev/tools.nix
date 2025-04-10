@@ -14,6 +14,7 @@
 
         # utilities
         unzip
+        tree
         wget
         dmenu           # basically no clue of what the following do
         i3lock          # i think they ended up here when trying to do 
