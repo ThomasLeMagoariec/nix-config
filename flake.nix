@@ -27,11 +27,6 @@
         ];
       };
 
-      paul = nixpkgs.lib.nixosSystem {
-        nixpkgs.hostPlatform = hostPlatform;
-        specialArgs = { inherit inputs hostPlatform; };
-        modules = [ ./hosts/paul ];
-      };
     };
   };
 }
