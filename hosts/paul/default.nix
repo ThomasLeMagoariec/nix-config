@@ -10,6 +10,8 @@
         ../../modules/dev/minimal.nix
     ];
 
+    dev.minimal.enable = true;
+
     networking.hostName = "paul";
     system.stateVersion = "24.11"; 
 }

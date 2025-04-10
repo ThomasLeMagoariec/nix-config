@@ -32,9 +32,7 @@
       paul = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs system; };
         modules = [
-            ./configuration.nix
-            ./modules/dev
-            ./modules/apps
+            ./hosts/paul/default.nix
         ];
       };
     };
