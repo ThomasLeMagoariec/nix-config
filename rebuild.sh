@@ -11,6 +11,11 @@ fi
 HOST=$1
 USERNAME=$(whoami)
 
+echo "🗑️ Deleting older verions of NixOS..."
+nix-env --delete-generations 5d
+nix-store --gc
+
+
 echo "🔄 Updating flake inputs..."
 nix flake update
 
