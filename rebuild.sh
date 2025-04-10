@@ -15,7 +15,7 @@ echo "🔄 Updating flake inputs..."
 nix flake update
 
 echo "🛠 Rebuilding NixOS for host '$HOST'..."
-sudo nixos-rebuild switch --flake .#"${HOST}"
+sudo nixos-rebuild switch --flake .#${HOST}
 
 echo "🏡 Rebuilding Home Manager for user '$USERNAME'..."
 home-manager switch --flake .#"${USERNAME}"
