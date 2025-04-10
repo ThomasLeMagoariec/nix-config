@@ -29,6 +29,9 @@
 
             shellAliases = {
                 gs = "git status";
+                gp = "git push";
+                ga = "git add -A";
+                gc = "git cmmit -m";
                 gac = "git add -A && git commit -m ";
                 gaca = "git add -A && git commit -m 'auto'";
                 gacp = "git add -A && git commit -m 'auto' && git push";
