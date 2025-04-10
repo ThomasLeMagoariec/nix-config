@@ -6,7 +6,7 @@ echo "🔄 Updating flake inputs..."
 nix flake update
 
 echo "🛠 Rebuilding NixOS with flakes..."
-sudo nixos-rebuild switch --flake .#nixos
+sudo nixos-rebuild switch --flake .#thomas
 
 echo "🏡 Rebuilding Home Manager with flakes..."
 home-manager switch --flake ./home-manager#thomas
