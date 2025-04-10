@@ -18,7 +18,7 @@ echo "🛠 Rebuilding NixOS for host '$HOST'..."
 sudo nixos-rebuild switch --flake .#${HOST}
 
 echo "🏡 Rebuilding Home Manager for user '$USERNAME'..."
-home-manager switch --flake .#${USERNAME}
+home-manager switch --flake ./home-manager#${USERNAME}
 
 echo "✅ Done rebuilding for host '$HOST' and user '$USERNAME'"
 
