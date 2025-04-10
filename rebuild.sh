@@ -8,8 +8,8 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-HOST="$1"
-USERNAME="$(whoami)"
+HOST=$1
+USERNAME=$(whoami)
 
 echo "🔄 Updating flake inputs..."
 nix flake update
