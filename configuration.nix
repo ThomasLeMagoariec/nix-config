@@ -144,20 +144,6 @@
     # $ nix search wget
     environment.systemPackages = with pkgs; [
         home-manager
-        i3status
-        dmenu
-        i3lock
-        xss-lock
-        xorg.xrandr
-        discord
-        neofetch
-        unzip
-        wget
-        pass
-        gnupg
-        wine
-        kitty
-        unityhub
     ];
 
     # Some programs need SUID wrappers, can be configured further or are
