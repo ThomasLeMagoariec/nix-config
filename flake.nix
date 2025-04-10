@@ -36,7 +36,7 @@
         ];
       };
       thomas = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs system };
+        specialArgs = { inherit inputs system; };
         modules = [./hosts/thomas/default.nix];
       };
     };
