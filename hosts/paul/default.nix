@@ -12,6 +12,8 @@
 
     dev.minimal.enable = true;
 
+    _module.args.hostRole = "paul";
+
     networking.hostName = "paul";
     system.stateVersion = "24.11"; 
 }
