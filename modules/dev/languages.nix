@@ -2,14 +2,14 @@
 
 {
   environment.systemPackages = with pkgs; [
-    go
-    python3
-    python3Packages.pip
-    nodejs
-    gcc11
+    go                      # golang
+    python3                 # python 3.12.9
+    python3Packages.pip     # pip (the worlds worst package manager)
+    nodejs                  # useful for anything and everything
+    gcc11                   # C/C++
 
-    pyright
-    dotnet-sdk_9
+    pyright                 # python LSP
+    dotnet-sdk_9            # C# (9 for nvim plugins, 7 for school work)
   ];
 }
 

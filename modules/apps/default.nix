@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./productivity.nix
+    ./productivity.nix # not all are productivity, but not worth having 69 files for 
   ];
 }
 

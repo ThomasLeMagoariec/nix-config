@@ -3,7 +3,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    cowsay
+    cowsay  # don't question my choices
     lolcat
   ];
 

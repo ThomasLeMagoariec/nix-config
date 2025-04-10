@@ -1,13 +1,15 @@
 { inputs, config, pkgs, lib, ... }:
 
 {
-  imports = [
-    ../../modules/apps/default.nix
-    ../../modules/dev/default.nix
-    # Add more modules here
-  ];
+    # config for a friend 
+    # is basically same as mine without hyprland and misc stuff
+    
+    imports = [
+        ../../modules/apps/default.nix
+        ../../modules/dev/default.nix
+    ];
 
-  networking.hostName = "paul";
-  system.stateVersion = "24.11"; # change accordingly
+    networking.hostName = "paul";
+    system.stateVersion = "24.11"; 
 }
 

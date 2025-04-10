@@ -2,9 +2,9 @@
 
 {
   environment.systemPackages = with pkgs; [
-    git
-    git-lfs
-    lazygit
+    git         # do I really need to explain ?
+    git-lfs     # big git
+    lazygit     # when i can't be arsed to google
   ];
 }
 
