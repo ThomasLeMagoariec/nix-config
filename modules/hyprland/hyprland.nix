@@ -10,7 +10,7 @@
     hyprlock                # Lock screen
     hypridle                # Idle management
     waybar                  # Status bar
-    wofi                    # Application launcher
+    #wofi                    # Application launcher
     swaynotificationcenter  # notifications
     hyprshot                # screenshots
   ];
