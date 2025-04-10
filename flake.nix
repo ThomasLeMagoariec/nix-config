@@ -34,7 +34,7 @@
         modules = [
             ./configuration.nix
             ./modules/dev
-            ./modules/apps/
+            ./modules/apps
         ];
       };
     };
