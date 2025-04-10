@@ -7,7 +7,7 @@
     imports = [
         ../../configuration.nix
         ../../modules/apps/default.nix
-        ../../modules/dev/default.nix
+        ../../modules/dev/minimal.nix
     ];
 
     networking.hostName = "paul";
