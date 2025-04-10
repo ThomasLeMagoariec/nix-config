@@ -31,7 +31,7 @@
       };
       paul = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs system; };
-        modules = [./hosts/paul]
+        modules = [./hosts/paul];
       };
     };
   };
