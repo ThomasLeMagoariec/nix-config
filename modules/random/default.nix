@@ -2,8 +2,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ./randpkgs.nix
-  ];
+    imports = [
+        ./randpkgs.nix
+    ];
 }
 
