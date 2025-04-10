@@ -6,6 +6,7 @@
         ./hardware-configuration.nix
         ./modules/system/locals.nix
         ./modules/system/users.nix
+        ./modules/system/services.nix
     ];
 
     # Bootloader.
