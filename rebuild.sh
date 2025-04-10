@@ -2,13 +2,23 @@
 
 set -e
 
+# Check for host argument
+if [ -z "$1" ]; then
+  echo "❌ Usage: $0 <hostname>"
+  exit 1
+fi
+
+HOST="$1"
+USERNAME="$(whoami)"
+
 echo "🔄 Updating flake inputs..."
 nix flake update
 
-echo "🛠 Rebuilding NixOS with flakes..."
-sudo nixos-rebuild switch --flake .#thomas
+echo "🛠 Rebuilding NixOS for host '$HOST'..."
+sudo nixos-rebuild switch --flake .#"${HOST}"
 
-echo "🏡 Rebuilding Home Manager with flakes..."
-home-manager switch --flake ./home-manager#thomas
+echo "🏡 Rebuilding Home Manager for user '$USERNAME'..."
+home-manager switch --flake .#"${USERNAME}"
 
-echo "✅ All done!"
+echo "✅ Done rebuilding for host '$HOST' and user '$USERNAME'"
+
