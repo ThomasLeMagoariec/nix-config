@@ -1,13 +1,13 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, lib, ... }:
 
 {
   imports = [
     ../../modules/apps/default.nix
     ../../modules/dev/default.nix
-    # Add other modules as needed
+    # Add more modules here
   ];
 
   networking.hostName = "paul";
-  system.stateVersion = "24.11"; # Adjust to your system's version
+  system.stateVersion = "24.11"; # change accordingly
 }
 
