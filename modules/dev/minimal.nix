@@ -15,7 +15,7 @@
             gcc11                   # C/C++
 
             pyright                 # python LSP
-        ] ++ lib.otionals (hostRole == "paul") [
+        ] ++ lib.optionals (hostRole == "paul") [
             helix
         ];
     };
