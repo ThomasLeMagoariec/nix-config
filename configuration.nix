@@ -117,7 +117,7 @@
     # Install firefox.
     # programs.firefox.enable = true;
     programs = {
-        nix-ld = { enble = true; };
+        nix-ld = { enable = true; };
         light = { enable = true; };
         firefox = { enable = true; };
         zsh = {
