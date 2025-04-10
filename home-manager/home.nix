@@ -8,6 +8,7 @@
 
     home.packages = with pkgs; [
         wofi
+        zsh
     ];
 
     home.file = {
