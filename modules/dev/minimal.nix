@@ -1,4 +1,4 @@
-{ config, lib, pkgs, hostRole ... }:
+{ config, lib, pkgs, hostRole, ... }:
 
 {
     options.dev.minimal.enable = lib.mkEnableOption "Enable minimal dev environment";
