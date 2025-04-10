@@ -29,6 +29,10 @@
           ./modules/random
         ];
       };
+      paul = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs system; };
+        modules = [./hosts/paul]
+      };
     };
   };
 }
