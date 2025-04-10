@@ -7,7 +7,7 @@
         description = "Thomas";
         extraGroups = [ "networkmanager" "wheel" "docker" "video" ];
         packages = with pkgs; [
-            #  thunderbird
+            #  use home-manager for this
         ];
     };
 }

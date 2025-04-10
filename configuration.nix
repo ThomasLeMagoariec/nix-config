@@ -7,6 +7,7 @@
         ./modules/system/locals.nix
         ./modules/system/users.nix
         ./modules/system/services.nix
+        ./modules/system/virtualisation.nix
     ];
 
     # Bootloader.
@@ -27,21 +28,6 @@
         trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
     };
 
-    virtualisation.libvirtd = {
-        enable = true;
-        qemu = {
-            package = pkgs.qemu_kvm;
-            runAsRoot = true;
-            swtpm.enable = true;
-            ovmf = {
-                enable = true;
-                packages = [(pkgs.OVMF.override {
-                    secureBoot = true;
-                    tpmSupport = true;
-                }).fd];
-            };
-        };
-    };
 
 
 
