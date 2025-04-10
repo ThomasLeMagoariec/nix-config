@@ -15,7 +15,7 @@
         };
 
         printing = { enable = true; };
-        pulseaudio = { enable = true; };
+        pulseaudio = { enable = false; };
 
         pipewire = {
             enable = true;
