@@ -120,11 +120,7 @@
         nix-ld = { enable = true; };
         light = { enable = true; };
         firefox = { enable = true; };
-        zsh = {
-            enable = true;
-            autosuggestions.enable = true;
-            zsh-autoenv.enable = true;
-        };
+        zsh = { enable = true; };
         gnupg.agent = {
             enable = true;
             enableSSHSupport = true;
