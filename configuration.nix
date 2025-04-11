@@ -8,7 +8,10 @@
         ./modules/system/users.nix
         ./modules/system/services.nix
         ./modules/system/virtualisation.nix
+        ./modules/system/options.nix
     ];
+
+    my.arbitrary.option = "yay";
 
     # Bootloader.
     boot.loader.systemd-boot.enable = true;
