@@ -19,15 +19,11 @@
         };
     in {
         nixosConfigurations = {
+
+            # kinda default user
             nixos = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs system; };
-                modules = [
-                    ./configuration.nix  # Ensure this file exists
-                    ./modules/hyprland
-                    ./modules/dev
-                    ./modules/apps
-                    ./modules/random
-                ];
+                modules = [ ./hosts/thomas/default.nix ];
             };
             paul = nixpkgs.lib.nixosSystem {
                 specialArgs = { inherit inputs system; };
