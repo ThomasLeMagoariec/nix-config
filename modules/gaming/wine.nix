@@ -2,7 +2,7 @@
 
 {
     environment.systemPackages = with pkgs; [
-        wineWowPackages.stable;
+        wineWowPackages.stable
     ];
 
     hardware.enable32Bit = true;
