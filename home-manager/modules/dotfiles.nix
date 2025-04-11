@@ -3,8 +3,8 @@
 {
 
     home.file = {
-        ".p10k.zsh".source = ./dotfiles/p10k.zsh;
-        ".config/wofi/config".source = ./dotfiles/wofi.config;
+        ".p10k.zsh".source = ../dotfiles/p10k.zsh;
+        ".config/wofi/config".source = ../dotfiles/wofi.config;
 
         # hyprland config
         ".config/hypr/hyprland.conf".source = ../dotfiles/hypr/hyprland.conf;
