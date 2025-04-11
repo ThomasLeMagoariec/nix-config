@@ -62,6 +62,8 @@
 
                 nvim = "nix run ~/coding/nix/nvim-config/";
 
+                rebuild = "cd ~/coding/nix/flakes/scripts && ./rebuild.sh thomas";
+
                 e = "exit";
             };
 
