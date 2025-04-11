@@ -5,11 +5,11 @@
 
     imports = [
         ../../configuration.nix
-        ../../modules/dev/
-        ../../modules/apps/
-        ../../modules/random/
-        ../../modules/hyprland/
-        ../../modules/gaming/
+        ../../modules/dev
+        ../../modules/apps
+        ../../modules/random
+        ../../modules/hyprland
+        ../../modules/gaming
     ];
 
 
