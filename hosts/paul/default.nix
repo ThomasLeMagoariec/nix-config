@@ -14,6 +14,7 @@ in
     [
         ../../configuration.nix
         ../../modules/dev/minimal.nix
+        ../../modules/dev/zsh.nix
     ]
     ++ lib.optional (de == "hyprland") ../../modules/hyprland;
 
