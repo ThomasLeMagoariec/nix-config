@@ -15,7 +15,7 @@ USERNAME=$(whoami)
 ./update.sh
 
 # rebuild nix
-./build-nix.sh ${HOST}
+./rebuild-nix.sh ${HOST}
 
 
 echo "✅ Done rebuilding for host '$HOST' and user '$USERNAME'"

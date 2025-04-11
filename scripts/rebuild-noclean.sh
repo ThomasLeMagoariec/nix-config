@@ -15,10 +15,10 @@ USERNAME=$(whoami)
 ./update.sh
 
 # rebuild nix
-./build-nix.sh ${HOST}
+./rebuild-nix.sh ${HOST}
 
 # rebuild home-manager
-./build-home.sh ${USERNAME}
+./rebuild-home.sh ${USERNAME}
 
 echo "✅ Done rebuilding for host '$HOST' and user '$USERNAME'"
 
