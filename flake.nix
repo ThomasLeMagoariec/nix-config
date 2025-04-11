@@ -18,6 +18,8 @@
             config = { allowUnfree = true; };
         };
     in {
+        harware.enableAllFirmware = true;
+        hardware.enable32Bit = true;
         nixosConfigurations = {
 
             # kinda default user
