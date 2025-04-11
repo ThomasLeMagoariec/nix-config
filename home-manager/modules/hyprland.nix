@@ -1,6 +1,10 @@
 {config, pkgs, ... }:
 
 {
+    # this is mainly for the school profile
+    # as my Hyprland packages/config are managed
+    # by Nix (modules/hyprland)
+
     programs.hyprland = {
         enable = true;
         xwayland.enable = true;
