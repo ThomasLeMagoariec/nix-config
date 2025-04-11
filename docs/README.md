@@ -44,7 +44,7 @@ To deploy a system config:
 `cd scripts/`
 
 ```bash
-./rebuild <host>
+./rebuild.sh <host>
 ```
 
 ## 💻 Modules Overview
@@ -76,14 +76,15 @@ System-level tweaks to reduce clutter in `configuration.nix`
 
 ## 🖥️ Host Details
 
-|Host    |Purpose                          |
-|--------|---------------------------------|
-|`thomas`| Main laptop (Gaming + Dev)      |
-|`paul`  | Minimal dev config for a friend |
-|`school`| Uses home-manager, no `sudo`    |
-|`nixos` | Fallback for `thomas`⚠️ Unstable |
+|Host    |Purpose                           |
+|--------|----------------------------------|
+|`thomas`| Main laptop (Gaming + Dev)       |
+|`paul`  | Minimal dev config for a friend  |
+|`school`| Uses home-manager, no `sudo`     |
+|`nixos` | Fallback for `thomas` (Unstable) |
 
-##⚠️🌟 Features
+## 🌟 Features
+
 ✅ Fully modular NixOS & Home Manager config
 
 🧩 Role-based setup with host, de, and sh vars
