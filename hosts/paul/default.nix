@@ -18,6 +18,8 @@ in
     ]
     ++ lib.optional (de == "hyprland") ../../modules/hyprland;
 
+    dev.minimal.enable = true;
+
     networking.hostName = host;
     system.stateVersion = "24.11";
 }
