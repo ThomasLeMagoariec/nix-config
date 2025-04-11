@@ -20,9 +20,6 @@
         EDITOR = "nvim";
     };
 
-    programs = {
-        wofi.enable = true;
-    };
 
     programs.home-manager.enable = true;
 }
