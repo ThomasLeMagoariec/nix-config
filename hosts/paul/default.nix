@@ -2,7 +2,7 @@
 
 let
     host = "paul";
-    de = "i3";
+    de = "hyprland";
 in
 {
     _module.args = {
