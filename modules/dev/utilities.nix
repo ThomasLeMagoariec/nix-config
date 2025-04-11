@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, de, ... }:
 
 {
     environment.systemPackages = with pkgs; [
@@ -6,15 +6,15 @@
         unzip
         tree
         wget
-        dmenu           # basically no clue of what the following do
-        i3lock          # i think they ended up here when trying to do 
-        xss-lock        # auth stuff ?
-        xorg.xrandr     # too scared to remove them 
-        pass            # so they survive another day
+        xss-lock        
+        xorg.xrandr
+        pass
         gnupg
-        i3status        # why is there so much i3 stuff ???
         light           # change brightness of screen
         nix-ld          # dynamically link executables
         firefox
+    ] ++ lib.optionals (de == "i3") [
+        i3lock
+        i3status
     ];
 }
