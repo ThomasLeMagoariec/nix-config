@@ -12,6 +12,9 @@ in
         sh = sh;
     };
 
+    harware.enableAllFirmware = true;
+    hardware.enable32Bit = true;
+
     imports =
     [
         ../../configuration.nix
