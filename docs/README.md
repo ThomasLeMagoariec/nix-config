@@ -1,53 +1,99 @@
-# My NixOS Configuration
+# ✨ My NixOS Configuration
 
-## Overview
-
-This repo contains my NixOS Configuration, as well as some of my .dotfiles
-
-## Folder Structure
-
-- `home-manager/`: contains my home-manager modules and .dotfiles
-- `hosts/`: contains different settings for different machines
-- `modules/`: modules used within my config
-- `scripts/`: helper scripts mainly for rebuilding and cleaning
-- `shells/`: useful shells I use regularly
-
-## Per-Host Variables
-
-To make my config as modular as possible I declare 3 variables per host:
-- `host`: username
-- `de`: DE/WM (currently the config only has settings for i3 and Hyprland)
-- `sh`: shell (currently the config only has settings for zsh and fish)
-
-## Modules
-
-Here is a list of what every (NixOS) module does.
-
-### Apps
-This installs useful GUIs such as obsidian for notetaking, a file explorer and a bluetooth manager
-
-### Dev
-This is for all the dev tools I use (and also random useful programs), configs for `zsh` and `fish` are located in `dev/shells`.
-`dev/minimum.nix` is just what I need if I want to quickly spin up something.
-
-### Gaming
-My gaming config, currently there is only Wine and Steam but maybe more in the future
-
-### Hyprland
-Packages I need for my Hyprland configuration, the `.dotfiles` are in `home-manager/dotfiles`
-
-### Random
-Packages that I haven't sorted or that are just there for fun.
-
-### System
-This just debloats my `configuration.nix` file
+This repo contains my fully modular NixOS + Home Manager setup, as well as tracked `.dotfiles`. Built around flakes and designed for maximum reusability across multiple machines.
 
 
-## Hosts
+## 📁 Folder Structure
 
-I currently have 3 hosts:
-    - `thomas`: my daily config
-    - `paul`: config for a friend just using NixOS for a project
-    - `school`: config for school, mainly uses home-manager because I don't have `sudo` access
+| Path           | Purpose                                                             |
+|----------------|---------------------------------------------------------------------|
+| [`home-manager/`](./home-manager) | Home Manager modules and `.dotfiles`                     |
+| [`hosts/`](./hosts)             | Per-host NixOS and Home Manager configuration            |
+| [`modules/`](./modules)         | Custom reusable NixOS modules                           |
+| [`shells/`](./shells)           | Shell-specific modules (e.g. zsh, fish)                  |
+| [`scripts/`](./scripts)         | Utility scripts for rebuilds, garbage collection, etc.   |
 
-you can also use the `nixos` host which I don't recommend as it just reverts to `thomas` and tends to break everything
+
+## 🧠 Per-Host Variables
+
+To keep things modular and DRY, each host defines the following in `_module.args`:
+
+- `host`: hostname (`"thomas"`, `"paul"`, `"school"`, etc.)
+- `de`: desktop environment/window manager (`"i3"`, `"hyprland"`)
+- `sh`: shell (`"fish"`, `"zsh"`)
+
+These variables are used throughout the system to conditionally load modules and configs.
+
+
+## ⚙️ Flake-Based Setup
+
+This config uses [Nix Flakes](https://nixos.wiki/wiki/Flakes) for reproducible system builds.|
+
+### Core files:
+
+- `flake.nix`: Declares inputs (nixpkgs, home-manager, etc.) and outputs
+- `flake.lock`: Version-locked inputs for reproducibility
+
+
+## 🚀 Usage
+
+### 🖥️ NixOS (system-level)
+
+To deploy a system config:
+
+`cd scripts/`
+
+```bash
+./rebuild <host>
+```
+
+## 💻 Modules Overview
+
+Each NixOS module serves a specific purpose:
+
+### apps
+Useful GUIs like Obsidian (notes), file manager, and Bluetooth tools.
+
+### dev
+All development tools, including Neovim, git, and other CLI apps.
+
+Shell-specific config lives in `dev/shells`
+
+`dev/minimum.nix`: Minimal setup for quick spin-ups
+
+### gaming
+
+Gaming stack (steam, wine) possibly more in the future
+
+### hyprland
+Packages required for Hyprland. Config files live under `home-manager/dotfiles`
+
+### random
+Fun or unsorted packages — sandbox for experimentation
+
+### system
+System-level tweaks to reduce clutter in `configuration.nix`
+
+## 🖥️ Host Details
+
+|Host    |Purpose                          |
+|--------|---------------------------------|
+|`thomas`| Main laptop (Gaming + Dev)      |
+|`paul`  | Minimal dev config for a friend |
+|`school`| Uses home-manager, no `sudo`    |
+|`nixos` | Fallback for `thomas`⚠️ Unstable |
+
+##⚠️🌟 Features
+✅ Fully modular NixOS & Home Manager config
+
+🧩 Role-based setup with host, de, and sh vars
+
+🐚 Zsh & Fish support
+
+🖥️ Hyprland & i3 WM setup
+
+🎮 Optional gaming environment
+
+🧼 Clean flake-based structure
+
+
