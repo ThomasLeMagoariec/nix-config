@@ -29,13 +29,6 @@
     };
 
     programs = {
-        nix-ld = { enable = true; };
-        firefox = { enable = true; };
-        zsh = {
-            enable = true;
-            autosuggestions.enable = true;
-            zsh-autoenv.enable = true;
-        };
         gnupg.agent = {
             enable = true;
             enableSSHSupport = true;

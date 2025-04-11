@@ -15,6 +15,8 @@
             gcc11                   # C/C++
 
             pyright                 # python LSP
+            nix-ld
+            firefox
         ] ++ lib.optionals (hostRole == "paul") [
             helix
         ];

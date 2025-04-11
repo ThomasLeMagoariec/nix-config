@@ -13,6 +13,8 @@
         pass            # so they survive another day
         gnupg
         i3status        # why is there so much i3 stuff ???
-        light
+        light           # change brightness of screen
+        nix-ld          # dynamically link executables
+        firefox
     ];
 }
