@@ -1,7 +1,7 @@
 { config, lib, pkgs, hostRole, ... }:
 
 {
-    steam = {
+    programs.steam = {
         enable = true;
         remotePlay.openFirewall = true;
         dedicatedServer.openFirewall = true;
