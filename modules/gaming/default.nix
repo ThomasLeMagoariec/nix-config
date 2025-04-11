@@ -5,5 +5,9 @@
         ./steam.nix
         ./wine.nix
     ];
+    
+    environment.systemPackages = with pkgs; [
+        prismlauncher
+    ];
 }
 
