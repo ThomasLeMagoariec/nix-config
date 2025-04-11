@@ -22,20 +22,8 @@
     security.rtkit.enable = true; # no clue what this is so won't touch it
 
 
-    nix.settings = {
-        experimental-features = [ "nix-command" "flakes" ];
-        substituters = ["https://hyprland.cachix.org"];
-        trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-    };
+    nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-    programs = {
-        steam = {
-            enable = true;
-            remotePlay.openFirewall = true;
-            dedicatedServer.openFirewall = true;
-            localNetworkGameTransfers.openFirewall = true;
-        };
-    };
 
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
