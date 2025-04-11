@@ -12,7 +12,7 @@ in
 
     imports =
     [
-        ./configuration.nix
+        ../../configuration.nix
         ../../modules/dev
         ../../modules/apps
         ../../modules/random
