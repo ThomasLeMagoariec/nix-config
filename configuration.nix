@@ -1,6 +1,9 @@
 { inputs, config, pkgs, ... }:
 
 {
+    harware.enableAllFirmware = true;
+    hardware.enable32Bit = true;
+    
     imports =
     [
         ./hardware-configuration.nix
