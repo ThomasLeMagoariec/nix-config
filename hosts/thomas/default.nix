@@ -12,8 +12,9 @@
         ../../modules/gaming
     ];
 
-
-    _module.args.hostRole = "thomas";
+    _module.args = {
+        host = "thomas";
+    };
     
     networking.hostName = "nixos";
     system.stateVersion = "24.11"; 

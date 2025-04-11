@@ -1,4 +1,4 @@
-{ config, lib, pkgs, hostRole, ... }:
+{ config, lib, pkgs, host, ... }:
 
 {
     options.dev.minimal.enable = lib.mkEnableOption "Enable minimal dev environment";
@@ -17,7 +17,7 @@
             pyright                 # python LSP
             nix-ld
             firefox
-        ] ++ lib.optionals (hostRole == "paul") [
+        ] ++ lib.optionals (host == "paul") [
             helix
         ];
     };
