@@ -6,7 +6,7 @@
     
     imports = [
         ../../configuration.nix
-        ../../modules/apps/default.nix
+        ../../modules/apps
         ../../modules/dev/minimal.nix
     ];
 
