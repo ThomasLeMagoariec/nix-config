@@ -1,5 +1,5 @@
 {
-    description = "Home Manager configuration of thomas";
+    description = "Home Manager configuration";
 
     inputs = {
         # Specify the source of Home Manager and Nixpkgs.
@@ -18,6 +18,11 @@
 
         # it is possible to configure different users
         homeConfigurations = {
+            # kinda default user, also consistency with nix config
+            "nixos" = home-manager.lib.homeManagerConfiguration {
+                inherit pkgs;
+                modules = [ ../hosts/thomas/home.nix ];
+            };
             "thomas" = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
                 modules = [ ../hosts/thomas/home.nix ];
