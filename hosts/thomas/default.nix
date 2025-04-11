@@ -3,11 +3,13 @@
 let
     host = "thomas";
     de = "hyprland";
+    sh = "zsh";
 in
 {
     _module.args = {
         host = host;
         de = de;
+        sh = sh;
     };
 
     imports =
@@ -18,7 +20,9 @@ in
         ../../modules/random
         ../../modules/gaming
     ]
-    ++ lib.optional (de == "hyprland") ../../modules/hyprland;
+    ++ lib.optional (de == "hyprland") ../../modules/hyprland
+    ++ lib.optional (sh == "fish") ../../modules/dev/shells/fish.nix
+    ++ lib.optional (sh == "zsh") ../../modules/dev/shells/zsh.nix;
 
     networking.hostName = "nixos";
     system.stateVersion = "24.11";
