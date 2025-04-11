@@ -1,21 +1,26 @@
-{ inputs, config, pkgs, lib, ... }:
+{ inputs, config, pkgs, lib, ... }@args:
 
+let
+    host = "thomas";
+    de = "hyprland";
+in
 {
-    # my config
+    _module.args = {
+        host = host;
+        de = de;
+    };
 
-    imports = [
-        ../../configuration.nix
+    imports =
+    [
+        ./configuration.nix
         ../../modules/dev
         ../../modules/apps
         ../../modules/random
-        ../../modules/hyprland
         ../../modules/gaming
-    ];
+    ]
+    ++ lib.optional (de == "hyprland") ../../modules/hyprland;
 
-    _module.args = {
-        host = "thomas";
-    };
-    
     networking.hostName = "nixos";
-    system.stateVersion = "24.11"; 
+    system.stateVersion = "24.11";
 }
+
