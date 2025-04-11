@@ -15,7 +15,7 @@
             };
         })
 
-        (lib.mkif (host == "paul") {
+        (lib.mkIf (host == "paul") {
             paul = {
                 isNormalUser = true;
                 description = "Paul";
