@@ -29,10 +29,6 @@
     };
 
     programs = {
-        gnupg.agent = {
-            enable = true;
-            enableSSHSupport = true;
-        };
         steam = {
             enable = true;
             remotePlay.openFirewall = true;
