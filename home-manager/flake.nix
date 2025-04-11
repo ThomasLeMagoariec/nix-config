@@ -22,6 +22,10 @@
                 inherit pkgs;
                 modules = [ ../hosts/thomas/home.nix ];
             };
+            "school" = home-manager.lib.hosts {
+                inherit pkgs;
+                modules = [ ../hosts/school/home.nix ];
+            };
         };
     };
 }
