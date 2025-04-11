@@ -15,7 +15,6 @@
         zsh
     ];
 
-
     home.sessionVariables = {
         EDITOR = "nvim";
     };
