@@ -30,7 +30,6 @@
 
     programs = {
         nix-ld = { enable = true; };
-        light = { enable = true; };
         firefox = { enable = true; };
         zsh = {
             enable = true;
