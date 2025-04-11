@@ -6,8 +6,6 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# clean
-./clean.sh
 
 echo "🪄Rebuilding NixOS for host '$1'..."
 sudo nixos-rebuild switch --flake ../#${1}
