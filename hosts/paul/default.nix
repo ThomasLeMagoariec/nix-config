@@ -1,26 +1,23 @@
-{ inputs, config, pkgs, lib, ... }:
+{ inputs, config, pkgs, lib, ... }@args:
 
+let
+    host = "paul";
+    de = "i3";
+in
 {
-    # config for a friend 
-    # is basically same as mine without hyprland and misc stuff
-    
     _module.args = {
-        host = "paul";
-        de = "i3";
+        host = host;
+        de = de;
     };
 
-    imports = [
+    imports =
+    [
         ../../configuration.nix
-        ../../modules/apps
         ../../modules/dev/minimal.nix
-    ] ++ lib.optionals (de == "hyprland") [
-        ../../modules/hyprland
-    ];
+    ]
+    ++ lib.optional (de == "hyprland") ../../modules/hyprland;
 
-    dev.minimal.enable = true;
-
-
-    networking.hostName = "paul";
-    system.stateVersion = "24.11"; 
+    networking.hostName = host;
+    system.stateVersion = "24.11";
 }
 
