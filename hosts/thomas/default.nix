@@ -9,6 +9,7 @@
         ../../modules/apps/default.nix
         ../../modules/random/default.nix
         ../../modules/hyprland/default.nix
+        ../../modules/gaming/default.nix
     ];
 
 
