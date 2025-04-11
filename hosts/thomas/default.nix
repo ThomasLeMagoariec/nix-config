@@ -20,6 +20,7 @@ in
         ../../modules/apps
         ../../modules/random
         ../../modules/gaming
+        ../../modules/flatpak
     ]
     ++ lib.optional (de == "hyprland") ../../modules/hyprland
     ++ lib.optional (sh == "fish") ../../modules/dev/shells/fish.nix
