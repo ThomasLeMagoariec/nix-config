@@ -15,7 +15,7 @@
         })
 
         (lib.mkIf (host == "paul") {
-            paul = {
+            palopil = {
                 isNormalUser = true;
                 description = "Paul";
                 extraGroups = [ "networkmanager" "wheel" "docker" "video" ];
