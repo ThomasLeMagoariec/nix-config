@@ -1,7 +1,6 @@
 { config, pkgs, lib, host, ... }:
 
 {
-    users.defaultUserShell=pkgs.zsh;
 
     users.users = lib.mkMerge [
         (lib.mkIf (host == "thomas") {
