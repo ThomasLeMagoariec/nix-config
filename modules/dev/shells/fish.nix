@@ -6,5 +6,5 @@
         shellAliases = {
             e = "exit";
         };
-    }
+    };
 }
