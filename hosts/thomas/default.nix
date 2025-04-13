@@ -4,6 +4,7 @@ let
     host = "thomas";
     de = "hyprland";
     sh = "zsh";
+    lfs = true;
 in
 {
     _module.args = {
@@ -25,6 +26,7 @@ in
     ++ lib.optional (de == "hyprland") ../../modules/hyprland
     ++ lib.optional (sh == "fish") ../../modules/dev/shells/fish.nix
     ++ lib.optional (sh == "zsh") ../../modules/dev/shells/zsh.nix;
+    ++ lib.optional (lfs) ../../modules/lfn
 
     networking.hostName = "nixos";
     system.stateVersion = "24.11";
