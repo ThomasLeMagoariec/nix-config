@@ -8,7 +8,7 @@
         flex
         gcc
         git
-        gnupg22
+        gnupg24
         gzip
         libelf-dev
         libncurses5-dev
