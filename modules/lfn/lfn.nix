@@ -6,5 +6,6 @@
         bison
         ncurses
         pkg-config
+        elfutils
     ];
 }
