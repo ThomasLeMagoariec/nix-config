@@ -7,5 +7,6 @@
         ncurses
         pkg-config
         elfutils
+        libelf
     ];
 }
