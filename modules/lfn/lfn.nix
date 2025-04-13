@@ -10,7 +10,7 @@
         git
         gnupg24
         gzip
-        libelf-dev
+        libelf
         libncurses5-dev
         libssl-dev
         make
