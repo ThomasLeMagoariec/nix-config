@@ -5,5 +5,6 @@
         flex
         bison
         ncurses
+        pkg-config
     ];
 }
