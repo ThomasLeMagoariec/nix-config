@@ -21,6 +21,7 @@ in
         ../../modules/random
         ../../modules/gaming
         ../../modules/flatpak
+        ../../modules/lfn
     ]
     ++ lib.optional (de == "hyprland") ../../modules/hyprland
     ++ lib.optional (sh == "fish") ../../modules/dev/shells/fish.nix
