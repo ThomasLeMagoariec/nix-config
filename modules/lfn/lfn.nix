@@ -8,5 +8,6 @@
         pkg-config
         elfutils
         libelf
+        bc
     ];
 }
