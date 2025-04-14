@@ -27,6 +27,7 @@ pkgs.mkShell {
         export FORCE_UNSAFE_CONFIGURE=1
         export CONFIG_SHELL=${pkgs.bash}/bin/bash
         export LFN=/home/thomas/coding/lfs/root
+        export ACLOCAL_PATH="${pkgs.pkg-config}/share/aclocal:${pkgs.gettext}/share/aclocal"
 
     '';
 }
