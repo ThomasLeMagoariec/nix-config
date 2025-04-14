@@ -14,5 +14,6 @@
         gettext
         gperf
         m4
+        libtool
     ];
 }
