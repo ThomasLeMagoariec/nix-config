@@ -23,6 +23,7 @@ pkgs.mkShell {
         gettext
         gperf
         m4
+        autoconf-archive
         libtool
     ];
 
