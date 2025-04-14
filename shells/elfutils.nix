@@ -1,6 +1,12 @@
 # shell.nix
 { pkgs ? import <nixpkgs> {} }:
 
+let
+    pkgConfig = pkgs.pkg-config;
+    gettext = pkgs.gettext;
+    extraAcmacros = "${pkgConfig}/share/aclocal:${gettext}/share/aclocal";
+in
+
 pkgs.mkShell {
     buildInputs = with pkgs; [
         elfutils
@@ -27,8 +33,7 @@ pkgs.mkShell {
         export FORCE_UNSAFE_CONFIGURE=1
         export CONFIG_SHELL=${pkgs.bash}/bin/bash
         export LFN=/home/thomas/coding/lfs/root
-        export ACLOCAL_PATH="${pkgs.pkg-config}/share/aclocal:${pkgs.gettext}/share/aclocal"
-
+        export ACLOCAL_PATH=${extraAcmacros}
     '';
 }
 
