@@ -9,5 +9,10 @@
         elfutils
         libelf
         bc
+        autoconf
+        automake
+        gettext
+        gperf
+        m4
     ];
 }
