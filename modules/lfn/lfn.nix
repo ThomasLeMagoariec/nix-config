@@ -15,5 +15,6 @@
         gperf
         m4
         libtool
+        grub2
     ];
 }
