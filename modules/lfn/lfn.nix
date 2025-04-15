@@ -16,5 +16,6 @@
         m4
         libtool
         grub2
+        efibootmgr
     ];
 }
