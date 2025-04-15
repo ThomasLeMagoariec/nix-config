@@ -25,6 +25,8 @@ pkgs.mkShell {
         m4
         autoconf-archive
         libtool
+        gcc11
+        gcc11Stdenv
     ];
 
     nativeBuildInputs = with pkgs; [
