@@ -5,6 +5,7 @@
     users.users = lib.mkMerge [
         (lib.mkIf (host == "thomas") {
             thomas = {
+                shell = pkgs.zsh;
                 isNormalUser = true;
                 description = "Thomas";
                 extraGroups = [ "networkmanager" "wheel" "docker" "video" ];

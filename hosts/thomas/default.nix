@@ -3,7 +3,7 @@
 let
     host = "thomas";
     de = "hyprland";
-    sh = "zsh";
+    sh = "";
     lfs = true;
 in
 {
