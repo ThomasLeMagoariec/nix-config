@@ -7,6 +7,7 @@
         ./git.nix
         ./tools.nix
         ./utilities.nix
+        ./shells/zsh.nix
   ];
 }
 
