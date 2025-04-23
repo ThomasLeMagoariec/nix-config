@@ -16,7 +16,7 @@
             gacp = "git add -A && git commit -m 'auto' && git push";
             gP = "git pull";
             
-            dotnet7 = "~/coding/nix/flakes/shells/dotnet7.nix";
+            dotnet7 = "nix-shell ~/coding/nix/flakes/shells/dotnet7.nix";
 
             code = "cd ~/coding";
             epita = "cd ~/coding/epita";
