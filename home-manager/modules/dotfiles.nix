@@ -25,7 +25,7 @@
 
         #eww config
         ".config/eww/eww.yuck".source = ../dotfiles/eww/eww.yuck;
-        ".config/eww/eww.css".source = ../dotfiles/eww/eww.css;
+        ".config/eww/eww.scss".source = ../dotfiles/eww/eww.scss;
 
     };
 

@@ -1,27 +1,15 @@
-(defpoll cpu :interval "2s" "top -bn1 | grep '%Cpu' | awk '{print $2}'")
-(defpoll mem :interval "2s" "free | awk '/Mem/ {printf(\"%.1f\", $3/$2 * 100)}'")
-(defpoll uptime :interval "30s" "uptime -p | sed 's/up //'")
-
-
-(defwindow dashboard
+(defwindow centered-window
   :monitor 0
-  :geometry (geometry :x 100 :y 100 :width 300 :height 200)
+  :geometry (center)
   :stacking "fg"
-  :exclusive true
-  :focusable false
-  (dashboard)
+  :exclusive false
+  :focusable true
 )
 
 
-(defwidget dashboard []
-  (box :class "dashboard"
-    (label :class "time" :text (strftime "%H:%M"))
-    (label :class "date" :text (strftime "%A, %b %d"))
-    (box :class "stats"
-      (label :class "cpu" :text "CPU: ${cpu}%")
-      (label :class "mem" :text "Mem: ${mem}%")
-      (label :class "uptime" :text "Uptime: ${uptime}")
-    )
+(defwidget main []
+  (box :class "center-container"
+    (label :text "Centered window content!")
   )
 )
 

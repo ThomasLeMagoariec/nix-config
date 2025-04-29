@@ -6,7 +6,7 @@
         cowsay      # don't question my choices
         lolcat
         neofetch    # for flexing purposes
-        eww
+        eww-wayland
     ];
 
 }
