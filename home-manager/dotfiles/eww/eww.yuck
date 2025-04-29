@@ -1,15 +1,105 @@
-(defwindow centered-window
+;; Variables
+(defpoll time :interval "1s" `date +%H:%M:%S`)
+(defpoll date :interval "1m" `date +%Y-%m-%d`)
+(defpoll battery :interval "1m" `cat /sys/class/power_supply/BAT0/capacity || echo "N/A"`)
+(defpoll volume :interval "1s" `pamixer --get-volume`)
+(defpoll brightness :interval "1s" `brightnessctl -m -d intel_backlight | cut -d, -f4 | tr -d %`)
+
+;; Get CPU, Memory and Disk usage with scripts
+(defpoll cpu :interval "1s" `sh ~/.config/eww/scripts/get-cpu.sh`)
+(defpoll memory :interval "1s" `sh ~/.config/eww/scripts/get-mem.sh`)
+(defpoll disk :interval "10s" `sh ~/.config/eww/scripts/get-disk.sh`)
+(defpoll network :interval "5s" `sh ~/.config/eww/scripts/get-network.sh`)
+
+;; Define widgets
+
+;; Clock widget
+(defwidget clock []
+  (box :class "clock-widget" 
+       :orientation "v"
+       :space-evenly false
+    (label :text time :class "time")
+    (label :text date :class "date")))
+
+;; System resources widget
+(defwidget system []
+  (box :class "system-widget" 
+       :orientation "v"
+       :space-evenly false
+    (box :class "metric"
+      (label :text "CPU" :class "metric-label")
+      (progress :value cpu :class "cpu-bar")
+      (label :text "${cpu}%" :class "metric-value"))
+    (box :class "metric"
+      (label :text "MEM" :class "metric-label")
+      (progress :value memory :class "mem-bar")
+      (label :text "${memory}%" :class "metric-value"))
+    (box :class "metric"
+      (label :text "DISK" :class "metric-label")
+      (progress :value disk :class "disk-bar")
+      (label :text "${disk}%" :class "metric-value"))))
+
+;; Network widget
+(defwidget network-widget []
+  (box :class "network-widget"
+       :orientation "h"
+       :space-evenly false
+    (label :text network :class "network-text")))
+
+;; Volume widget
+(defwidget volume-widget []
+  (box :class "volume-widget"
+       :orientation "h"
+       :space-evenly false
+    (label :text "VOL" :class "volume-label")
+    (scale :min 0
+           :max 101
+           :value volume
+           :onchange "pamixer --set-volume {}"
+           :class "volume-slider")))
+
+;; Brightness widget
+(defwidget brightness-widget []
+  (box :class "brightness-widget"
+       :orientation "h"
+       :space-evenly false
+    (label :text "BRI" :class "brightness-label")
+    (scale :min 0
+           :max 101
+           :value brightness
+           :onchange "brightnessctl set {}%"
+           :class "brightness-slider")))
+
+;; Battery widget
+(defwidget battery-widget []
+  (box :class "battery-widget"
+       :orientation "h"
+       :space-evenly false
+    (label :text "BAT" :class "battery-label")
+    (progress :value battery :class "battery-bar")
+    (label :text "${battery}%" :class "battery-value")))
+
+;; Combining all widgets into a dashboard
+(defwidget dashboard []
+  (box :class "dashboard"
+       :orientation "v"
+       :space-evenly false
+    (clock)
+    (system)
+    (box :class "controls" :orientation "v" :space-evenly false
+      (volume-widget)
+      (brightness-widget)
+      (battery-widget))
+    (network-widget)))
+
+;; Window definition
+(defwindow dashboard
   :monitor 0
-  :geometry (center)
-  :stacking "fg"
-  :exclusive false
-  :focusable true
-)
-
-
-(defwidget main []
-  (box :class "center-container"
-    (label :text "Centered window content!")
-  )
-)
-
+  :geometry (geometry :x "10px"
+                     :y "10px"
+                     :width "300px"
+                     :height "auto"
+                     :anchor "top right")
+  :windowtype "dock"
+  :wm-ignore true
+  (dashboard))

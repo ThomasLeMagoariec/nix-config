@@ -1,15 +1,228 @@
-window#centered-window {
-  background-color: rgba(30, 30, 30, 0.9);
+/* Global Variables */
+$bg: #282c34;
+$bg-alt: #383c44;
+$fg: #abb2bf;
+$fg-alt: #767b87;
+$blue: #61afef;
+$green: #98c379;
+$orange: #d19a66;
+$purple: #c678dd;
+$red: #e06c75;
+$yellow: #e5c07b;
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+}
+
+.dashboard {
+  background-color: $bg;
   border-radius: 12px;
-  padding: 20px;
-  width: 300px;
-  height: 200px;
+  color: $fg;
+  padding: 16px;
 }
 
-.center-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+/* Clock Widget */
+.clock-widget {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: $bg-alt;
+  border-radius: 10px;
+  
+  .time {
+    font-size: 32px;
+    font-weight: bold;
+    color: $blue;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: $fg-alt;
+  }
 }
 
+/* System Resource Widget */
+.system-widget {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: $bg-alt;
+  border-radius: 10px;
+  
+  .metric {
+    margin: 5px 0;
+    
+    .metric-label {
+      font-size: 14px;
+      min-width: 40px;
+    }
+    
+    .metric-value {
+      font-size: 14px;
+      min-width: 50px;
+      margin-left: 10px;
+    }
+  }
+  
+  .cpu-bar {
+    background-color: $fg-alt;
+    border-radius: 10px;
+    min-height: 10px;
+    min-width: 150px;
+    
+    trough {
+      background-color: $bg;
+      border-radius: 10px;
+      min-height: 10px;
+      min-width: 150px;
+    }
+    
+    highlight {
+      background-color: $red;
+      border-radius: 10px;
+    }
+  }
+  
+  .mem-bar {
+    background-color: $fg-alt;
+    border-radius: 10px;
+    min-height: 10px;
+    min-width: 150px;
+    
+    trough {
+      background-color: $bg;
+      border-radius: 10px;
+      min-height: 10px;
+      min-width: 150px;
+    }
+    
+    highlight {
+      background-color: $blue;
+      border-radius: 10px;
+    }
+  }
+  
+  .disk-bar {
+    background-color: $fg-alt;
+    border-radius: 10px;
+    min-height: 10px;
+    min-width: 150px;
+    
+    trough {
+      background-color: $bg;
+      border-radius: 10px;
+      min-height: 10px;
+      min-width: 150px;
+    }
+    
+    highlight {
+      background-color: $green;
+      border-radius: 10px;
+    }
+  }
+}
+
+/* Controls Widget */
+.controls {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: $bg-alt;
+  border-radius: 10px;
+}
+
+/* Volume Widget */
+.volume-widget {
+  margin: 5px 0;
+  
+  .volume-label {
+    font-size: 14px;
+    min-width: 40px;
+  }
+  
+  .volume-slider {
+    min-width: 150px;
+    
+    trough {
+      background-color: $bg;
+      border-radius: 10px;
+      min-height: 10px;
+      min-width: 150px;
+    }
+    
+    highlight {
+      background-color: $purple;
+      border-radius: 10px;
+    }
+  }
+}
+
+/* Brightness Widget */
+.brightness-widget {
+  margin: 5px 0;
+  
+  .brightness-label {
+    font-size: 14px;
+    min-width: 40px;
+  }
+  
+  .brightness-slider {
+    min-width: 150px;
+    
+    trough {
+      background-color: $bg;
+      border-radius: 10px;
+      min-height: 10px;
+      min-width: 150px;
+    }
+    
+    highlight {
+      background-color: $yellow;
+      border-radius: 10px;
+    }
+  }
+}
+
+/* Battery Widget */
+.battery-widget {
+  margin: 5px 0;
+  
+  .battery-label {
+    font-size: 14px;
+    min-width: 40px;
+  }
+  
+  .battery-bar {
+    background-color: $fg-alt;
+    border-radius: 10px;
+    min-height: 10px;
+    min-width: 150px;
+    
+    trough {
+      background-color: $bg;
+      border-radius: 10px;
+      min-height: 10px;
+      min-width: 150px;
+    }
+    
+    highlight {
+      background-color: $orange;
+      border-radius: 10px;
+    }
+  }
+  
+  .battery-value {
+    font-size: 14px;
+    min-width: 50px;
+    margin-left: 10px;
+  }
+}
+
+/* Network Widget */
+.network-widget {
+  padding: 10px;
+  background-color: $bg-alt;
+  border-radius: 10px;
+  
+  .network-text {
+    font-size: 14px;
+  }
+}
