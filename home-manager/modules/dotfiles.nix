@@ -23,6 +23,10 @@
         ".config/waybar/power_menu.xml".source = ../dotfiles/waybar/power_menu.xml;
         ".config/waybar/style.css".source = ../dotfiles/waybar/style.css;
 
+        #eww config
+        ".config/eww/eww.yuck".source = ../dotfiles/eww/eww.yuck;
+        ".config/eww/eww.css".source = ../dotfiles/eww/eww.css;
+
     };
 
 }
