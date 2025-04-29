@@ -26,6 +26,8 @@
             rebuild = "cd ~/coding/nix/flakes/scripts && ./rebuild.sh thomas";
             clean = "cd ~/coding/nix/flakes/scripts && ./clean.sh";
 
+            light = "sudo light";
+
             e = "exit";
         };
 
