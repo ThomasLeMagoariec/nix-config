@@ -15,9 +15,6 @@
 
         # bg and stuff
         ".config/hypr/MraeZ5D.png".source = ../dotfiles/hypr/MraeZ5D.png;
-        ".config/hypr/clouds.JPG".source = ../dotfiles/hypr/clouds.JPG;
-        ".config/hypr/rose_pine_contourline.png".source = ../dotfiles/hypr/rose_pine_contourline.png;
-        ".config/hypr/smth_beautiful.jpg".source = ../dotfiles/hypr/smth_beautiful_.jpg;
         ".config/hypr/wallpaper.png".source = ../dotfiles/hypr/wallpaper.png;
 
         # waybar config

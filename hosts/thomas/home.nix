@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let 
+    theme = "rose-pine";
+in
 {
     imports = [
         ../../home-manager/modules
