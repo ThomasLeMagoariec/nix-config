@@ -1,13 +1,27 @@
-(defwindow example
-           :monitor 0
-           :geometry (geometry :x "0%"
-                               :y "20px"
-                               :width "90%"
-                               :height "30px"
-                               :anchor "top center")
-           :stacking "fg"
-           :reserve (struts :distance "40px" :side "top")
-           :windowtype "dock"
-           :wm-ignore false
-  "example content")
+(defpoll cpu :interval "2s" "top -bn1 | grep '%Cpu' | awk '{print $2}'")
+(defpoll mem :interval "2s" "free | awk '/Mem/ {printf(\"%.1f\", $3/$2 * 100)}'")
+(defpoll uptime :interval "30s" "uptime -p | sed 's/up //'")
+
+
+(defwindow dashboard
+  :monitor 0
+  :geometry (geometry :x 100 :y 100 :width 300 :height 200)
+  :stacking "fg"
+  :exclusive true
+  :focusable false
+  (dashboard)
+)
+
+
+(defwidget dashboard []
+  (box :class "dashboard"
+    (label :class "time" :text (strftime "%H:%M"))
+    (label :class "date" :text (strftime "%A, %b %d"))
+    (box :class "stats"
+      (label :class "cpu" :text "CPU: ${cpu}%")
+      (label :class "mem" :text "Mem: ${mem}%")
+      (label :class "uptime" :text "Uptime: ${uptime}")
+    )
+  )
+)
 
