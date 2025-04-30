@@ -6,6 +6,7 @@
         ".config/hypr/wallpaper.png".source = ../dotfiles/hypr/wallpaper-nord.png;
         ".config/hypr/lockscreen.png".source = ../dotfiles/hypr/lockscreen-nord.png;
         ".config/hypr/hyprlock.conf".source = ../dotfiles/hypr/hyprlock-nord.conf;
+        ".config/waybar/style.css".source = ../dotfiles/waybar/style-nord.css;
     };
 
 }
