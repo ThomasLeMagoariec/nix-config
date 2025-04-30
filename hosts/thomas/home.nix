@@ -5,7 +5,7 @@ let
 in
 {
     _module.args = {
-        theme = "nord";
+        theme = theme;
     };
 
     imports = [

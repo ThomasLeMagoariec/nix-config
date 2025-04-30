@@ -14,9 +14,6 @@
         ".config/hypr/hyprlock.conf".source = ../dotfiles/hypr/hyprlock.conf;
         ".config/hypr/hyprpaper.conf".source = ../dotfiles/hypr/hyprpaper.conf;
 
-        # bg and stuff
-        ".config/hypr/MraeZ5D.png".source = ../dotfiles/hypr/MraeZ5D.png;
-        ".config/hypr/wallpaper.png".source = ../dotfiles/hypr/wallpaper.png;
 
         # waybar config
         ".config/waybar/config.jsonc".source = ../dotfiles/waybar/config.jsonc;
