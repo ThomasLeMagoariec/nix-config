@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let 
-    theme = "nord";
+    theme = "rose-pine";
 in
 {
     _module.args = {
