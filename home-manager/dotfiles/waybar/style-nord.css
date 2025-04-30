@@ -57,7 +57,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #5e81ac;
+    color: #e5e9f0;
 }
 
 #workspaces button:hover {
@@ -96,7 +96,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    color: #000000;
 }
 
 #window,
@@ -115,7 +115,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #eb6f92;
+    background-color: #e5e9f0;
     min-width: 60px;
     margin: 0px 0px 0px 0px;
     padding: 0px 3px 0px 3px;
@@ -123,8 +123,8 @@ button:hover {
 }
 
 #battery {
-    background-color: #eb6f92;
-    color: #e0def4;
+    background-color: #e5e9f0;
+    color: #000000;
     min-width: 80px;
     margin: 0px 0px 0px 0px;
     padding: 0px 3px 0px 3px;
