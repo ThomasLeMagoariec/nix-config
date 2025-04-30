@@ -11,7 +11,6 @@
         #".config/hypr/theme.conf".source = ../dotfiles/hypr/rose-pine.conf;
         ".config/hypr/hyprland.conf".source = ../dotfiles/hypr/hyprland.conf;
         ".config/hypr/hypridle.conf".source = ../dotfiles/hypr/hypridle.conf;
-        ".config/hypr/hyprlock.conf".source = ../dotfiles/hypr/hyprlock.conf;
         ".config/hypr/hyprpaper.conf".source = ../dotfiles/hypr/hyprpaper.conf;
 
 
