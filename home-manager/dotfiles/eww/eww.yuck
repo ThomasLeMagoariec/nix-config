@@ -1,9 +1,15 @@
 ;; Variables
 (defpoll time :interval "1s" `date +%H:%M:%S`)
 (defpoll date :interval "1m" `date +%Y-%m-%d`)
-(defpoll battery :interval "1m" `cat /sys/class/power_supply/BAT0/capacity || echo "N/A"`)
-(defpoll volume :interval "1s" `pamixer --get-volume`)
+(defpoll battery :interval "1m" `cat /sys/class/power_supply/BAT0/capacity || echo 0`)
+(defpoll volume :interval "1s" `echo 0`)
 (defpoll brightness :interval "1s" `light`)
+
+;; Get CPU, Memory and Disk usage with scripts
+(defpoll cpu :interval "1s" `sh ~/.config/eww/scripts/get-cpu.sh`)
+(defpoll memory :interval "1s" `sh ~/.config/eww/scripts/get-mem.sh`)
+(defpoll disk :interval "10s" `sh ~/.config/eww/scripts/get-disk.sh`)
+(defpoll network :interval "5s" `sh ~/.config/eww/scripts/get-network.sh`)
 
 ;; Define widgets
 
@@ -15,6 +21,30 @@
     (label :text time :class "time")
     (label :text date :class "date")))
 
+;; System resources widget
+(defwidget system []
+  (box :class "system-widget" 
+       :orientation "v"
+       :space-evenly false
+    (box :class "metric"
+      (label :text "CPU" :class "metric-label")
+      (progress :value cpu :class "cpu-bar")
+      (label :text "${cpu}%" :class "metric-value"))
+    (box :class "metric"
+      (label :text "MEM" :class "metric-label")
+      (progress :value memory :class "mem-bar")
+      (label :text "${memory}%" :class "metric-value"))
+    (box :class "metric"
+      (label :text "DISK" :class "metric-label")
+      (progress :value disk :class "disk-bar")
+      (label :text "${disk}%" :class "metric-value"))))
+
+;; Network widget
+(defwidget network-widget []
+  (box :class "network-widget"
+       :orientation "h"
+       :space-evenly false
+    (label :text network :class "network-text")))
 
 ;; Volume widget
 (defwidget volume-widget []
@@ -79,6 +109,7 @@
         (volume-widget)
         (brightness-widget)
         (battery-widget)))
+    (network-widget)))
 
 ;; Window definition
 (defwindow dashboard

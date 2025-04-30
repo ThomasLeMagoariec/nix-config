@@ -26,10 +26,10 @@
         #eww config
         ".config/eww/eww.yuck".source = ../dotfiles/eww/eww.yuck;
         ".config/eww/eww.scss".source = ../dotfiles/eww/eww.scss;
-        ".config/eww/get-cpu.sh".source = ../dotfiles/eww/get-cpu.sh;
-        ".config/eww/get-disk.sh".source = ../dotfiles/eww/get-disk.sh;
-        ".config/eww/get-mem.sh".source = ../dotfiles/eww/get-mem.sh;
-        ".config/eww/get-network.sh".source = ../dotfiles/eww/get-network.sh;
+        ".config/eww/scripts/get-cpu.sh".source = ../dotfiles/eww/get-cpu.sh;
+        ".config/eww/scripts/get-disk.sh".source = ../dotfiles/eww/get-disk.sh;
+        ".config/eww/scripts/get-mem.sh".source = ../dotfiles/eww/get-mem.sh;
+        ".config/eww/scripts/get-network.sh".source = ../dotfiles/eww/get-network.sh;
 
     };
 
