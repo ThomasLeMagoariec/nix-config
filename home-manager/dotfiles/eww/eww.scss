@@ -22,21 +22,48 @@ $yellow: #e5c07b;
   padding: 16px;
 }
 
+/* Close Button */
+.close-button-container {
+  margin-left: auto;
+}
+
+.close-button {
+  font-size: 16px;
+  font-weight: bold;
+  color: $fg-alt;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  background-color: $bg-alt;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    color: $red;
+    background-color: rgba(224, 108, 117, 0.2);
+  }
+}
+
+/* Header Section */
+.header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
 /* Clock Widget */
 .clock-widget {
-  margin-bottom: 20px;
   padding: 10px;
   background-color: $bg-alt;
   border-radius: 10px;
   
   .time {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: $blue;
   }
   
   .date {
-    font-size: 14px;
+    font-size: 12px;
     color: $fg-alt;
   }
 }
@@ -121,12 +148,19 @@ $yellow: #e5c07b;
   }
 }
 
+/* Controls Container */
+.controls-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 /* Controls Widget */
 .controls {
-  margin-bottom: 20px;
   padding: 10px;
   background-color: $bg-alt;
   border-radius: 10px;
+  margin: 0 auto;
+  /* Width is set in the widget declaration (30%) */
 }
 
 /* Volume Widget */

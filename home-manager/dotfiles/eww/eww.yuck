@@ -3,13 +3,7 @@
 (defpoll date :interval "1m" `date +%Y-%m-%d`)
 (defpoll battery :interval "1m" `cat /sys/class/power_supply/BAT0/capacity || echo "N/A"`)
 (defpoll volume :interval "1s" `pamixer --get-volume`)
-(defpoll brightness :interval "1s" `brightnessctl -m -d intel_backlight | cut -d, -f4 | tr -d %`)
-
-;; Get CPU, Memory and Disk usage with scripts
-(defpoll cpu :interval "1s" `sh ~/.config/eww/scripts/get-cpu.sh`)
-(defpoll memory :interval "1s" `sh ~/.config/eww/scripts/get-mem.sh`)
-(defpoll disk :interval "10s" `sh ~/.config/eww/scripts/get-disk.sh`)
-(defpoll network :interval "5s" `sh ~/.config/eww/scripts/get-network.sh`)
+(defpoll brightness :interval "1s" `light`)
 
 ;; Define widgets
 
@@ -21,30 +15,6 @@
     (label :text time :class "time")
     (label :text date :class "date")))
 
-;; System resources widget
-(defwidget system []
-  (box :class "system-widget" 
-       :orientation "v"
-       :space-evenly false
-    (box :class "metric"
-      (label :text "CPU" :class "metric-label")
-      (progress :value cpu :class "cpu-bar")
-      (label :text "${cpu}%" :class "metric-value"))
-    (box :class "metric"
-      (label :text "MEM" :class "metric-label")
-      (progress :value memory :class "mem-bar")
-      (label :text "${memory}%" :class "metric-value"))
-    (box :class "metric"
-      (label :text "DISK" :class "metric-label")
-      (progress :value disk :class "disk-bar")
-      (label :text "${disk}%" :class "metric-value"))))
-
-;; Network widget
-(defwidget network-widget []
-  (box :class "network-widget"
-       :orientation "h"
-       :space-evenly false
-    (label :text network :class "network-text")))
 
 ;; Volume widget
 (defwidget volume-widget []
@@ -79,27 +49,45 @@
     (progress :value battery :class "battery-bar")
     (label :text "${battery}%" :class "battery-value")))
 
+;; Close button widget
+(defwidget close-button []
+  (box :class "close-button-container"
+       :halign "end"
+    (button :class "close-button"
+            :onclick "eww close dashboard"
+            "✕")))
+
 ;; Combining all widgets into a dashboard
 (defwidget dashboard []
   (box :class "dashboard"
        :orientation "v"
        :space-evenly false
-    (clock)
-    (system)
-    (box :class "controls" :orientation "v" :space-evenly false
-      (volume-widget)
-      (brightness-widget)
-      (battery-widget))
-    (network-widget)))
+    (box :class "header"
+         :orientation "h"
+         :space-evenly false
+      (clock)
+      (box :hexpand true)
+      (close-button))
+    (box :class "controls-container"
+         :orientation "h"
+         :space-evenly false
+         :halign "center"
+      (box :class "controls" 
+           :orientation "v" 
+           :space-evenly false
+           :width 30
+        (volume-widget)
+        (brightness-widget)
+        (battery-widget)))
 
 ;; Window definition
 (defwindow dashboard
   :monitor 0
-  :geometry (geometry :x "10px"
-                     :y "10px"
-                     :width "300px"
-                     :height "auto"
-                     :anchor "top right")
+  :geometry (geometry :x "0px"
+                     :y "0px"
+                     :width "80%"
+                     :height "80%"
+                     :anchor "center")
   :windowtype "dock"
   :wm-ignore true
   (dashboard))
