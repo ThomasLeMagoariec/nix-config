@@ -21,7 +21,6 @@
             code = "cd ~/coding";
             epita = "cd ~/coding/epita";
 
-            nvim = "nix run ~/coding/nix/nvim-config/";
 
             rebuild = "cd ~/coding/nix/flakes/scripts && ./rebuild.sh thomas";
             clean = "cd ~/coding/nix/flakes/scripts && ./clean.sh";
