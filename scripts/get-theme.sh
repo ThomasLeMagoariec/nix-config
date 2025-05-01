@@ -4,8 +4,9 @@
 theme_file="./theme.txt"
 
 if [ -f "$theme_file" ]; then
-  theme=$(cat "$theme_file")
-  echo "Current theme: $theme"
+    theme=$(cat "$theme_file")
+    echo "$theme"
 else
-  echo "No theme file found."
+    # default value
+    echo "rose-pine"
 fi
