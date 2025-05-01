@@ -1,5 +1,6 @@
 { pkgs, ... }: {
     programs.nixvim.plugins = {
+        web-devicons.enable = true;
         lualine.enable = true;
         luasnip.enable = true;
         cmp = {
@@ -78,7 +79,6 @@ cmp.setup({
         };
 
 
-        web-devicons.enable = true;
 
         telescope = {
             enable = true;

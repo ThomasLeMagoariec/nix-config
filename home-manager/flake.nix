@@ -8,7 +8,7 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        nixvim.url = "github:nix-community/nixvim";
+        nixvim.url = "github:nix-community/nixvim/nixos-24.11";
     };
 
     outputs = { nixpkgs, home-manager, nixvim, ... }:
