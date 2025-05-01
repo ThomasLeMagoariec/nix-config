@@ -31,6 +31,20 @@
                         ../hosts/thomas/home.nix
                 ];
             };
+            "rose-pine" = home-manager.lib.homeManagerConfiguration {
+                inherit pkgs;
+                modules = [
+                        nixvim.homeManagerModules.nixvim
+                        ../hosts/thomas/rose-pine.nix
+                ];
+            };
+            "nord" = home-manager.lib.homeManagerConfiguration {
+                inherit pkgs;
+                modules = [
+                        nixvim.homeManagerModules.nixvim
+                        ../hosts/thomas/nord.nix
+                ];
+            };
             "school" = home-manager.lib.hosts {
                 inherit pkgs;
                 modules = [ ../hosts/school/home.nix ];
