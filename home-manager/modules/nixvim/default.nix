@@ -1,11 +1,12 @@
 { config, lib, pkgs, ... }:
-
-let
-    nixvim = import (builtins.fetchGit {
-        url = "https://github.com/nix-community/nixvim";
-        # When using a different channel you can use `ref = "nixos-<version>"` to set it here
-    });
-in
 {
-}
+    import = [
+        ./keybindins.nix
+        ./options.nix
+        ./plugins.nix
+    ];
 
+    programs.nixvim = {
+        enable = true;
+    };
+}

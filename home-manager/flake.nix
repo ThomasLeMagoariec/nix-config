@@ -8,16 +8,10 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        inputs.nixvim = {
-            url = "github:nix-community/nixvim";
-            # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
+        nixvim.url = "github:nix-community/nixvim";
     };
 
-    outputs = { nixpkgs, home-manager, ... }:
+    outputs = { nixpkgs, home-manager, nixvim, ... }:
     let
             system = "x86_64-linux";
             pkgs = nixpkgs.legacyPackages.${system};
@@ -32,7 +26,10 @@
             };
             "thomas" = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
-                modules = [ ../hosts/thomas/home.nix ];
+                modules = [
+                        nixvim.homeManagerModules.nixvim
+                        ../hosts/thomas/home.nix
+                ];
             };
             "school" = home-manager.lib.hosts {
                 inherit pkgs;
