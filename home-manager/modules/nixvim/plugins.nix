@@ -109,7 +109,7 @@ cmp.setup({
     };
     
     programs.nixvim.extraPlugins = [
-        pkgs.vimPlugins.rose-pine
+        #pkgs.vimPlugins.rose-pine
         pkgs.vimPlugins.nord-vim
     ];
 }

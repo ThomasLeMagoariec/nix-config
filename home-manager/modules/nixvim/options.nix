@@ -1,21 +1,20 @@
-{ ... }: {
+{
     programs.nixvim = {
-        colorschemes.rose-pine.enable = true;
-        config = {
-            globals.mapleader = " ";
+        #config = {
+        #globals.mapleader = " ";
         
-            colorscheme = "rose-pine";
+        #    colorscheme = "rose-pine";
         
-            opts = {
-                number = true;
+        #    opts = {
+        #        number = true;
 
-                tabstop = 4;
-                softtabstop = 4;
-                shiftwidth = 4;
-                expandtab = true;
-                smartindent = true;
+        #       tabstop = 4;
+        #        softtabstop = 4;
+        #        shiftwidth = 4;
+        #        expandtab = true;
+        #        smartindent = true;
     
-            };
-        };
+        #    };
+        #};
     };
 }

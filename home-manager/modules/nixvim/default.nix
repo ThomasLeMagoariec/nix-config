@@ -2,8 +2,8 @@
 {
     imports = [
         ./keybindings.nix
-        ./options.nix
         ./plugins.nix
+        ./options.nix
     ];
 
     programs.nixvim = {
