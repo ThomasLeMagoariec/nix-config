@@ -26,6 +26,7 @@ in
 
     home.sessionVariables = {
         EDITOR = "nvim";
+        THEME = theme;
     };
 
 
