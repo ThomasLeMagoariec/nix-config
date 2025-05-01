@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
-    import = [
-        ./keybindins.nix
+    imports = [
+        ./keybindings.nix
         ./options.nix
         ./plugins.nix
     ];
