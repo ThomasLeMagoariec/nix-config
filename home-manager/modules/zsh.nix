@@ -24,6 +24,8 @@
 
             rebuild = "cd ~/coding/nix/flakes/scripts && ./rebuild.sh thomas";
             clean = "cd ~/coding/nix/flakes/scripts && ./clean.sh";
+            switch-nord = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-nord.sh &";
+            switch-rosepine = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-rosepine.sh &";
 
             light = "sudo light";
 
