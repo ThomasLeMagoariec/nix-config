@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-    plugins = {
+    programs.nixvim.plugins = {
         lualine.enable = true;
         luasnip.enable = true;
         cmp = {

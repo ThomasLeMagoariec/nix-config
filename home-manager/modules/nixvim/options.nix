@@ -1,5 +1,5 @@
 { ... }: {
-    config = {
+    programs.nixvim.config = {
         globals.mapleader = " ";
         
         colorscheme = "nord";
