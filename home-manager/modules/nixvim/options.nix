@@ -1,9 +1,11 @@
+{ theme, ...}:
+
 {
     programs.nixvim = {
         config = {
             globals.mapleader = " ";
         
-            colorscheme = "nord";
+            colorscheme = theme;
         
             opts = {
                 number = true;
