@@ -108,7 +108,7 @@ cmp.setup({
         neo-tree.enable = true;
     };
     
-    extraPlugins = [
+    programs.nixvim.extraPlugins = [
         pkgs.vimPlugins.rose-pine
         pkgs.vimPlugins.nord-vim
     ];
