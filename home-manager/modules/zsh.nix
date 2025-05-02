@@ -26,6 +26,7 @@
             clean = "cd ~/coding/nix/flakes/scripts && ./clean.sh";
             switch-nord = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-nord.sh &";
             switch-rosepine = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-rosepine.sh &";
+            switch-catpuccin = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-catpuccin.sh &";
 
             light = "sudo light";
 
