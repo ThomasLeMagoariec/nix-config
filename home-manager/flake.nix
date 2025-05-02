@@ -45,11 +45,11 @@
                         ../hosts/thomas/nord.nix
                 ];
             };
-            "catpuccin" = home-manager.lib.homeManagerConfiguration {
+            "catppuccin" = home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
                 modules = [
                         nixvim.homeManagerModules.nixvim
-                        ../hosts/thomas/catpuccin.nix
+                        ../hosts/thomas/catppuccin.nix
                 ];
             };
             "school" = home-manager.lib.hosts {

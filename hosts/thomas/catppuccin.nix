@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let 
-    theme = "catpuccin";
+    theme = "catppuccin";
 in
 {
     _module.args = {
@@ -13,7 +13,7 @@ in
     ]
     ++ lib.optional (theme == "rose-pine") ../../home-manager/modules/rose-pine.nix
     ++ lib.optional (theme == "nord") ../../home-manager/modules/nord.nix
-    ++ lib.optional (theme == "catpuccin") ../../home-manager/modules/catpuccin.nix;
+    ++ lib.optional (theme == "catppuccin") ../../home-manager/modules/catppuccin.nix;
 
     home.username = "thomas";
     home.homeDirectory = "/home/thomas";
