@@ -1,4 +1,5 @@
 { pkgs, ... }: {
+    programs.nixvim.colorschemes.catpuccin.enable = true;
     programs.nixvim.plugins = {
         web-devicons.enable = true;
         lualine.enable = true;
