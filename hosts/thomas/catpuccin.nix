@@ -12,7 +12,7 @@ in
         ../../home-manager/modules
     ]
     ++ lib.optional (theme == "rose-pine") ../../home-manager/modules/rose-pine.nix
-    ++ lib.optional (theme == "nord") ../../home-manager/modules/nord.nix;
+    ++ lib.optional (theme == "nord") ../../home-manager/modules/nord.nix
     ++ lib.optional (theme == "catpuccin") ../../home-manager/modules/catpuccin.nix;
 
     home.username = "thomas";
