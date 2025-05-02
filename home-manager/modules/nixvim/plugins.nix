@@ -1,6 +1,7 @@
 { pkgs, ... }: {
-    programs.nixvim.colorschemes.catpuccin.enable = true;
     programs.nixvim.plugins = {
+
+
         web-devicons.enable = true;
         lualine.enable = true;
         luasnip.enable = true;
@@ -110,5 +111,6 @@ cmp.setup({
     programs.nixvim.extraPlugins = [
         pkgs.vimPlugins.rose-pine
         pkgs.vimPlugins.nord-vim
+        pkgs.vimPlugins.catppuccin-nvim
     ];
 }
