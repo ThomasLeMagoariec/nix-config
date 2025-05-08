@@ -118,6 +118,6 @@ cmp.setup({
                 owner="vuciv";
                 repo="golf";
             };
-        };)
+        })
     ];
 }
