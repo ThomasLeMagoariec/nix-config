@@ -112,5 +112,12 @@ cmp.setup({
         pkgs.vimPlugins.rose-pine
         pkgs.vimPlugins.nord-vim
         pkgs.vimPlugins.catppuccin-nvim
+        (pkgs.vimUtils.buildVimPlugin {
+            name = "golf";
+            src = pkgs.fetchFromGitHub {
+                owner="vuciv";
+                repo="golf";
+            };
+        };)
     ];
 }
