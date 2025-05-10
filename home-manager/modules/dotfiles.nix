@@ -5,6 +5,7 @@
     home.file = {
         ".config/wofi/config".source = ../dotfiles/wofi.config;
         ".bashrc".source = ../dotfiles/.bashrc;
+        ".config/starship.toml".source = ../dotfiles/starship.toml;
 
         # hyprland config
         #".config/hypr/theme.conf".source = ../dotfiles/hypr/rose-pine.conf;
