@@ -1,0 +1,87 @@
+# General config
+format = """
+$directory$git_branch$git_status$nodejs$python$rust$golang$docker_context
+$fill
+$cmd_duration$jobs$time$status
+$character"""
+
+right_format = """
+$cmd_duration$jobs$time$status"""
+
+add_newline = true
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vicmd_symbol = "[❮](bold blue)"
+
+[directory]
+style = "bold blue"
+read_only = " "
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold yellow"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+conflicted = "⚔️ "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+untracked = " ${count}"
+stashed = "📦 ${count}"
+modified = " ${count}"
+staged = " ${count}"
+renamed = " ${count}"
+deleted = " ${count}"
+
+[cmd_duration]
+min_time = 500
+format = "⏱ [$duration]($style) "
+style = "bold yellow"
+
+[python]
+symbol = " "
+style = "bold blue"
+format = '[$symbol$version]($style) '
+
+[nodejs]
+symbol = " "
+style = "bold green"
+format = '[$symbol$version]($style) '
+
+[rust]
+symbol = " "
+style = "bold red"
+format = '[$symbol$version]($style) '
+
+[golang]
+symbol = " "
+style = "bold cyan"
+format = '[$symbol$version]($style) '
+
+[docker_context]
+symbol = " "
+style = "blue bold"
+format = '[$symbol$context]($style) '
+
+[time]
+disabled = false
+time_format = "%R" # 24h format
+style = "bold white"
+format = "🕒 [$time]($style) "
+
+[status]
+style = "bold red"
+symbol = "✖"
+format = "[$symbol $status]($style) "
+
+[jobs]
+symbol = "✦"
+style = "bold green"
+format = "[$symbol $number]($style) "
+
