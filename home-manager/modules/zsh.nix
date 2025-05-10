@@ -34,12 +34,12 @@
         };
 
         initContent = ''
-            source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-            [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
             export EDITOR=nvim
             bindkey '^P' up-history
             bindkey '^N' down-history
+
+            eval "$(starship init zsh)"
         '';
 
         plugins = [
