@@ -16,17 +16,17 @@
             gacp = "git add -A && git commit -m 'auto' && git push";
             gP = "git pull";
             
-            dotnet7 = "nix-shell ~/coding/nix/flakes/shells/dotnet7.nix";
+            dotnet7 = "nix-shell ~/coding/nix/config/shells/dotnet7.nix";
 
             code = "cd ~/coding";
             epita = "cd ~/coding/epita";
 
 
-            rebuild = "cd ~/coding/nix/flakes/scripts && ./rebuild.sh thomas";
-            clean = "cd ~/coding/nix/flakes/scripts && ./clean.sh";
-            switch-nord = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-nord.sh &";
-            switch-rosepine = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-rosepine.sh &";
-            switch-catppuccin = "cd ~/coding/nix/flakes/scripts && ./rebuild-home-catppuccin.sh &";
+            rebuild = "cd ~/coding/nix/config/scripts && ./rebuild.sh thomas";
+            clean = "cd ~/coding/nix/config/scripts && ./clean.sh";
+            switch-nord = "cd ~/coding/nix/config/scripts && ./rebuild-home-nord.sh &";
+            switch-rosepine = "cd ~/coding/nix/config/scripts && ./rebuild-home-rosepine.sh &";
+            switch-catppuccin = "cd ~/coding/nix/config/scripts && ./rebuild-home-catppuccin.sh &";
 
             light = "sudo light";
 
