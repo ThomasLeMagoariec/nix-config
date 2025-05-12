@@ -1,10 +1,9 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, vscode, ... }:
 
 {
     environment.systemPackages = with pkgs; [
         neovim
         vim
-        vscode
-    ];
+    ] ++ lib.optional (vscode) pkgs.vscode;
 }
 

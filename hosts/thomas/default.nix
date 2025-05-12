@@ -4,6 +4,7 @@ let
     host = "thomas";
     de = "hyprland";
     sh = "";
+    vscode = false;
     lfs = true;
 in
 {
@@ -11,6 +12,7 @@ in
         host = host;
         de = de;
         sh = sh;
+        vscode = vscode;
     };
 
 
