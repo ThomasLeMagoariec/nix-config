@@ -1,12 +1,9 @@
 # General config
 format = """
 $directory$git_branch$git_status$nodejs$python$rust$golang$docker_context
-$fill
-$cmd_duration$jobs$time$status
+$cmd_duration
 $character"""
 
-right_format = """
-$cmd_duration$jobs$time$status"""
 
 add_newline = true
 
