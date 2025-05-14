@@ -23,5 +23,7 @@ USERNAME=$(whoami)
 # rebuild home-manager
 ./rebuild-home.sh ${USERNAME}
 
+nixos-generate-config --dir ..
+
 echo "✅ Done rebuilding for host '$HOST' and user '$USERNAME'"
 
