@@ -9,5 +9,7 @@
         ./utilities.nix
         ./shells/zsh.nix
   ];
+
+  programs.nix-ld.enable = true;
 }
 
