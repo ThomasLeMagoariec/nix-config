@@ -30,6 +30,6 @@
         #tmux
         ".tmux.conf".source = ../dotfiles/tmux/tmux.conf;
         ".tmux/".source = ../dotfiles/tmux/tmux;
-
+    };
 }
 
