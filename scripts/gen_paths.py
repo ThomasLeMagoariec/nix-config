@@ -9,11 +9,15 @@ def list_files_recursive(directory):
         for file in files:
             if root == "../home-manager/dotfiles/tmux-stuff": continue
             if ".git" in root.split("/"): continue
+            if ".git" in file: continue
             if file == ".gitignore": continue
             if file == ".gitattributes": continue
             if file == ".gitmodules": continue
             if file == ".travis.yml": continue
             if file == "CHANGELOG.md": continue
+            if file == "CONTRIBUTING.md": continue
+            if file == "LICENSE.md": continue
+            if file == "README.md": continue
 
             real_loc = root.split("../home-manager/dotfiles/tmux-stuff/tmux/")[1]
             #print("\t\t\".tmux/" + real_loc + "/" + file + "\".source = " + root + "/" + file)

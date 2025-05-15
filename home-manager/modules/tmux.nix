@@ -2,13 +2,8 @@
 {
 	home.file = {
 		#tmux
-		".tmux/plugins/tmux-sensible/LICENSE.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-sensible/LICENSE.md;
 		".tmux/plugins/tmux-sensible/sensible.tmux".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-sensible/sensible.tmux;
-		".tmux/plugins/tmux-sensible/README.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-sensible/README.md;
-		".tmux/plugins/tmux-resurrect/CONTRIBUTING.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/CONTRIBUTING.md;
-		".tmux/plugins/tmux-resurrect/LICENSE.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/LICENSE.md;
 		".tmux/plugins/tmux-resurrect/resurrect.tmux".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/resurrect.tmux;
-		".tmux/plugins/tmux-resurrect/README.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/README.md;
 		".tmux/plugins/tmux-resurrect/run_tests".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/run_tests;
 		".tmux/plugins/tmux-resurrect/docs/migrating_from_tmuxinator.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/migrating_from_tmuxinator.md;
 		".tmux/plugins/tmux-resurrect/docs/save_dir.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/save_dir.md;
@@ -40,15 +35,12 @@
 		".tmux/plugins/tmux-resurrect/strategies/vim_session.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/strategies/vim_session.sh;
 		".tmux/plugins/tmux-resurrect/strategies/nvim_session.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/strategies/nvim_session.sh;
 		".tmux/plugins/tmux-resurrect/strategies/irb_default_strategy.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/strategies/irb_default_strategy.sh;
-		".tmux/plugins/tmux-resurrect/lib/tmux-test/LICENSE.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/LICENSE.md;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/run_framework_tests".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/run_framework_tests;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/vagrant_centos_provisioning.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/vagrant_centos_provisioning.sh;
-		".tmux/plugins/tmux-resurrect/lib/tmux-test/README.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/README.md;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/Vagrantfile".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/Vagrantfile;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/run_tests;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/vagrant_ubuntu_provisioning.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/vagrant_ubuntu_provisioning.sh;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/setup".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/setup;
-		".tmux/plugins/tmux-resurrect/lib/tmux-test/.git".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/.git;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/tests/test_default_session_name.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/test_default_session_name.sh;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/tests/run_tests_in_isolation".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/run_tests_in_isolation;
 		".tmux/plugins/tmux-resurrect/lib/tmux-test/tests/test_tmux_scripting.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/lib/tmux-test/tests/test_tmux_scripting.sh;
@@ -63,10 +55,8 @@
 		".tmux/plugins/tmux-resurrect/scripts/restore.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/scripts/restore.sh;
 		".tmux/plugins/tmux-resurrect/scripts/helpers.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/scripts/helpers.sh;
 		".tmux/plugins/tmux-resurrect/scripts/variables.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/scripts/variables.sh;
-		".tmux/plugins/tpm/LICENSE.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/LICENSE.md;
 		".tmux/plugins/tpm/HOW_TO_PLUGIN.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/HOW_TO_PLUGIN.md;
 		".tmux/plugins/tpm/tpm".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/tpm;
-		".tmux/plugins/tpm/README.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/README.md;
 		".tmux/plugins/tpm/docs/managing_plugins_via_cmd_line.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/docs/managing_plugins_via_cmd_line.md;
 		".tmux/plugins/tpm/docs/how_to_create_plugin.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/docs/how_to_create_plugin.md;
 		".tmux/plugins/tpm/docs/tpm_not_working.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/docs/tpm_not_working.md;
