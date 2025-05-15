@@ -29,7 +29,7 @@
 
         #tmux
         ".tmux.conf".source = ../dotfiles/tmux/tmux.conf;
-        ".tmux/".source = ../dotfiles/tmux/tmux;
+        ".tmux/plugins".source = ../dotfiles/tmux/tmux/plugins;
     };
 }
 
