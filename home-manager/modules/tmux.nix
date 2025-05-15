@@ -2,7 +2,6 @@
 {
 	home.file = {
 		#tmux
-		".tmux/plugins/tmux-sensible/sensible.tmux".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-sensible/sensible.tmux;
 		".tmux/plugins/tpm/HOW_TO_PLUGIN.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/HOW_TO_PLUGIN.md;
 		".tmux/plugins/tpm/tpm".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/tpm;
 		".tmux/plugins/tpm/docs/managing_plugins_via_cmd_line.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/docs/managing_plugins_via_cmd_line.md;
