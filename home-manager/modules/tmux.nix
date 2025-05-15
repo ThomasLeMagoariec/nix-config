@@ -5,15 +5,6 @@
 		".tmux/plugins/tmux-sensible/sensible.tmux".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-sensible/sensible.tmux;
 		".tmux/plugins/tmux-resurrect/resurrect.tmux".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/resurrect.tmux;
 		".tmux/plugins/tmux-resurrect/run_tests".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/run_tests;
-		".tmux/plugins/tmux-resurrect/docs/migrating_from_tmuxinator.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/migrating_from_tmuxinator.md;
-		".tmux/plugins/tmux-resurrect/docs/save_dir.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/save_dir.md;
-		".tmux/plugins/tmux-resurrect/docs/restoring_previously_saved_environment.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/restoring_previously_saved_environment.md;
-		".tmux/plugins/tmux-resurrect/docs/restoring_programs.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/restoring_programs.md;
-		".tmux/plugins/tmux-resurrect/docs/restoring_vim_and_neovim_sessions.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/restoring_vim_and_neovim_sessions.md;
-		".tmux/plugins/tmux-resurrect/docs/hooks.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/hooks.md;
-		".tmux/plugins/tmux-resurrect/docs/restoring_pane_contents.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/restoring_pane_contents.md;
-		".tmux/plugins/tmux-resurrect/docs/custom_key_bindings.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/custom_key_bindings.md;
-		".tmux/plugins/tmux-resurrect/docs/restoring_bash_history.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs/restoring_bash_history.md;
 		".tmux/plugins/tmux-resurrect/video/script.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/video/script.md;
 		".tmux/plugins/tmux-resurrect/video/issue_vid.png".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/video/issue_vid.png;
 		".tmux/plugins/tmux-resurrect/video/screencast_img.png".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/video/screencast_img.png;

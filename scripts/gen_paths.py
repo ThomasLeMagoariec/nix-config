@@ -8,6 +8,7 @@ def list_files_recursive(directory):
     for root, dirs, files in os.walk(directory):
         for file in files:
             if root == "../home-manager/dotfiles/tmux-stuff": continue
+            if root == "../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux-resurrect/docs": continue
             if ".git" in root.split("/"): continue
             if ".git" in file: continue
             if file == ".gitignore": continue
