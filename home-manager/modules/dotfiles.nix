@@ -27,8 +27,6 @@
         ".config/eww/scripts/get-mem.sh".source = ../dotfiles/eww/get-mem.sh;
         ".config/eww/scripts/get-network.sh".source = ../dotfiles/eww/get-network.sh;
 
-        #tmux
-        ".tmux.conf".source = ../dotfiles/tmux-stuff/tmux.conf;
     };
 }
 
