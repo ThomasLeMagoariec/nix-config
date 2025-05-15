@@ -18,7 +18,9 @@ def list_files_recursive(directory):
             if file == "CHANGELOG.md": continue
             if file == "CONTRIBUTING.md": continue
             if file == "LICENSE.md": continue
+            if file == "license": continue
             if file == "README.md": continue
+            if file == "readme.md": continue
 
             real_loc = root.split("../home-manager/dotfiles/tmux-stuff/tmux/")[1]
             #print("\t\t\".tmux/" + real_loc + "/" + file + "\".source = " + root + "/" + file)

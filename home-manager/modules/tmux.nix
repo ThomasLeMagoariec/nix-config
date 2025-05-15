@@ -39,8 +39,6 @@
 		".tmux/plugins/tpm/scripts/helpers/utility.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/scripts/helpers/utility.sh;
 		".tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh;
 		".tmux/plugins/tpm/scripts/helpers/plugin_functions.sh".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tpm/scripts/helpers/plugin_functions.sh;
-		".tmux/plugins/tmux/readme.md".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux/readme.md;
 		".tmux/plugins/tmux/rose-pine.tmux".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux/rose-pine.tmux;
-		".tmux/plugins/tmux/license".source = ../home-manager/dotfiles/tmux-stuff/tmux/plugins/tmux/license;
 	};
 }
