@@ -5,7 +5,6 @@
         ./zsh.nix
         ./dotfiles.nix
         ./nixvim
-        ./tmux.nix
     ];
 }
 

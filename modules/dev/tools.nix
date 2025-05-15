@@ -2,7 +2,6 @@
 
 {
     environment.systemPackages = with pkgs; [
-        tmux            # essential
         ollama          # local chatGPT
         poetry          # python venvs and Prologin
         pre-commit      # Prologin
@@ -18,6 +17,19 @@
     programs.gnupg.agent = {
         enable = true;
         enableSSHSupport = true;
+    };
+
+    programs.tmux = {
+        enable = true;
+        plugins = [ pkgs.tmuxPlugins.rose-pine ];
+        extraConfig = ''            
+            bind -n M-Left select-pane -L
+            bind -n M-Right select-pane -R
+            bind -n M-Up select-pane -U
+            bind -n M-Down select-pane -D
+
+            set -g mouse on
+        '';
     };
 }
 
