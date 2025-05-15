@@ -28,11 +28,11 @@
         ".config/eww/scripts/get-network.sh".source = ../dotfiles/eww/get-network.sh;
 
         #tmux
-        ".tmux.conf".source = ../dotfiles/tmux/tmux.conf;
-        ".tmux" = {
-            source = ../dotfiles/tmux-stuff/tmux;
-            recursive = true;
-        };
+        ".tmux.conf".source = ../dotfiles/tmux-stuff/tmux.conf;
+        #".tmux" = {
+        #    source = ../dotfiles/tmux-stuff/tmux;
+        #    recursive = true;
+        #};
     };
 }
 
