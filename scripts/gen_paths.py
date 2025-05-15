@@ -1,6 +1,6 @@
 import os
 
-res = "{ config, pkgs, ... }:\n{\n\thome.file = {\n"
+res = "{ config, pkgs, ... }:\n{\n\thome.file = {\n\t\t#tmux\n"
 
 def list_files_recursive(directory):
     global res
@@ -8,6 +8,12 @@ def list_files_recursive(directory):
     for root, dirs, files in os.walk(directory):
         for file in files:
             if root == "../home-manager/dotfiles/tmux-stuff": continue
+            if ".git" in root.split("/"): continue
+            if file == ".gitignore": continue
+            if file == ".gitattributes": continue
+            if file == ".gitmodules": continue
+            if file == ".travis.yml": continue
+            if file == "CHANGELOG.md": continue
 
             real_loc = root.split("../home-manager/dotfiles/tmux-stuff/tmux/")[1]
             #print("\t\t\".tmux/" + real_loc + "/" + file + "\".source = " + root + "/" + file)
