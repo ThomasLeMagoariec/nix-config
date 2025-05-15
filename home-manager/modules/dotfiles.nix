@@ -29,10 +29,6 @@
 
         #tmux
         ".tmux.conf".source = ../dotfiles/tmux-stuff/tmux.conf;
-        ".tmux" = {
-            source = ../dotfiles/tmux-stuff/tmux;
-            recursive = true;
-        };
     };
 }
 
