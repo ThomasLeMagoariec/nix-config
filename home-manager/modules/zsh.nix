@@ -15,7 +15,9 @@
             gaca = "git add -A && git commit -m 'auto'";
             gacp = "git add -A && git commit -m 'auto' && git push";
             gP = "git pull";
-            
+
+            dirc = "~/coding/sh/dirc.sh";
+
             dotnet7 = "nix-shell ~/coding/nix/config/shells/dotnet7.nix";
 
             code = "cd ~/coding";
