@@ -11,7 +11,6 @@
         kitty           # everyones favorite terminal emulator
         unityhub        # worst engine ever, need it for school work
         gnumake
-        virtualbox
     ];
 
   
