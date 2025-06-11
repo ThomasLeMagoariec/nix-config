@@ -8,7 +8,7 @@
                 shell = pkgs.zsh;
                 isNormalUser = true;
                 description = "Thomas";
-                extraGroups = [ "networkmanager" "wheel" "docker" "video" ];
+                extraGroups = [ "networkmanager" "wheel" "docker" "video" "jackaudio" ];
                 packages = with pkgs; [
                     # use home-manager for this
                 ];

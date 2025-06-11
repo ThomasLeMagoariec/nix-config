@@ -6,6 +6,7 @@
         obsidian # note taking app
         nautilus # file explorer
         blueman  # bluetooth manager gui
+        libreoffice
     ];
 }
 
