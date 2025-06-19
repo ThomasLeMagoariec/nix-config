@@ -14,6 +14,7 @@
         nix-ld          # dynamically link executables
         firefox
         starship
+        ncurses
     ] ++ lib.optionals (de == "i3") [
         i3lock
         i3status
