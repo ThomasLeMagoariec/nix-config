@@ -71,7 +71,8 @@ cmp.setup({
             enable = true;
             servers = {
                 lua_ls.enable = true;
-                omnisharp.enable = true;
+                # omnisharp.enable = true;
+                clangd.enable = true;
                 ccls.enable = true;
                 pyright.enable = true;
                 html.enable = true;
