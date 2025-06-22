@@ -9,7 +9,6 @@
         caligula        # iso burner (tui)
         wine            # for running many cracked games 
         kitty           # everyones favorite terminal emulator
-        unityhub        # worst engine ever, need it for school work
         gnumake
         hugo
         ansible
