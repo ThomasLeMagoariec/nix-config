@@ -1,15 +1,15 @@
-#!/usr/bin/env bash
+#!/run/current-system/sw/bin/zsh
 
 # Show custom options in wofi
 CHOICE=$(echo -e "Rebuild\nRebuild No Clean\nRebuild Nix\nRebuild Home\nRebuild rosé-pine\nRebuild catppuccin\nRebuild nord" | wofi --dmenu --prompt "Choose theme:")
 
 case "$CHOICE" in
     "Rebuild")
-        cd .. && ./rebuild.sh thomas && notify-send "Finished rebuilding!";;
+        cd .. && kitty -e zsh -c "./rebuild.sh thomas" && notify-send "Finished rebuilding!";;
     "Rebuild No Clean")
-        cd .. && ./rebuild-noclean.sh thomas && notify-send "Finished rebuilding without cleaning!";;
+        cd .. && kitty -e zsh -c "./rebuild-noclean.sh thomas" && notify-send "Finished rebuilding without cleaning!";;
     "Rebuild Nix")
-        cd .. && ./rebuild-nix.sh thomas && notify-send "Fished rebuilding nix!";;
+        cd .. && kitty -e zsh -c "./rebuild-nix.sh thomas" && notify-send "Finished rebuild nix!";;
     "Rebuild Home")
         cd .. && ./rebuild-home.sh thomas && notify-send "Finished rebuilding home-manager!";;
     "Rebuild rosé-pine")

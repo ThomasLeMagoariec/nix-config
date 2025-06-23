@@ -6,5 +6,10 @@
         autosuggestions.enable = true;
         zsh-autoenv.enable = true;
     };
+    
+
+    environment.shells = with pkgs; [ zsh ];
+
+
 
 }
