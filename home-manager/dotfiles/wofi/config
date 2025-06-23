@@ -1,9 +1,9 @@
 show=drun
-term=foot
+term=kitty
 allow_markup=true
 insensitive=true
 matching=fuzzy
-prompt=""
+prompt=♥
 width=500
 height=400
 lines=10

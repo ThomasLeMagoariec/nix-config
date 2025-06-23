@@ -3,7 +3,7 @@ window {
     border: 2px solid #1e66f5;
     background-color: #1e1e2e;
     font-family: "JetBrainsMono Nerd Font", monospace;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 #input {
@@ -12,6 +12,7 @@ window {
     border: none;
     border-radius: 6px;
     background-color: #313244;
+    font-size: 1.5rem;
     color: #cdd6f4;
 }
 
