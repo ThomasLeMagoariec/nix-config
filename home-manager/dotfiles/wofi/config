@@ -1,0 +1,15 @@
+show=drun
+term=foot
+allow_markup=true
+insensitive=true
+matching=fuzzy
+prompt=""
+width=500
+height=400
+lines=10
+columns=1
+hide_scroll=true
+location=center
+always_parse_args=true
+no_actions=true
+
