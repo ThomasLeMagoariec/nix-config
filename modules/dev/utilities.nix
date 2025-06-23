@@ -15,6 +15,7 @@
         firefox
         starship
         ncurses
+        libnotify
     ] ++ lib.optionals (de == "i3") [
         i3lock
         i3status
