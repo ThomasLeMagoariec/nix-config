@@ -14,32 +14,14 @@
     ],
     "modules-right": [
         "battery",
-        "battery#bat2",
-        "custom/power"
+        "battery#bat2"
     ],
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "format-icons": {
-            "1": "",
+            "1": "",
             "2": "",
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
             "3": "",
             "4": "",
             "5": "",
