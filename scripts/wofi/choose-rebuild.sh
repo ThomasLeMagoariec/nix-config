@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Show custom options in wofi
+CHOICE=$(echo -e "Rebuild\nRebuild No Clean\nRebuild Nix\nRebuild Home\nRebuild rosé-pine\nRebuild catppuccin\nRebuild nord" | wofi --dmenu --prompt "Choose theme:")
+
+case "$CHOICE" in
+    "Rebuild")
+        cd .. && ./rebuild.sh thomas && notify-send "Finished rebuilding!";;
+    "Rebuild No Clean")
+        cd .. && ./rebuild-noclean.sh thomas && notify-send "Finished rebuilding without cleaning!";;
+    "Rebuild Nix")
+        cd .. && ./rebuild-nix.sh thomas && notify-send "Fished rebuilding nix!";;
+    "Rebuild Home")
+        cd .. && ./rebuild-home.sh thomas && notify-send "Finished rebuilding home-manager!";;
+    "Rebuild rosé-pine")
+        cd .. && ./rebuild-home-rosepine.sh && notify-send "Finished applying rosé-pine theme!";;
+    "Rebuild catppuccin")
+        cd .. && ./rebuild-home-catppuccin.sh && notify-send "Finished applying catppuccin theme!";;
+    "Rebuild nord")
+        cd .. && ./rebuild-home-nord.sh && notify-send "Finished applying nord theme!";;
+    *)
+        exit 1 ;;  # in case of no selection or exit
+esac
+
