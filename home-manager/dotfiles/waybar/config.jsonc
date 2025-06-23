@@ -10,7 +10,9 @@
         "hyprland/workspaces",
     ],
     "modules-center": [
-        "clock"
+        "custom/theme",
+        "clock",
+        "custom/rebuild"
     ],
     "modules-right": [
         "battery",
@@ -192,5 +194,17 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+    },
+    "custom/theme": {
+        "exec": "echo ♥",
+        "on-click": "cd ~/coding/nix/config/scripts/wofi/ && ./choose-theme.sh",
+        "interval": 0
+    },
+    "custom/rebuild": {
+        "exec": "echo ♣",
+        "on-click": "cd ~/coding/nix/config/scripts/wofi/ && ./choose-rebuild.sh",
+        "interval": 0
     }
+
+
 }

@@ -94,7 +94,9 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
+#mpd,
+#custom-theme,
+#custom-rebuild {
     padding: 0 10px;
     color: #ffffff;
 }
@@ -120,6 +122,24 @@ button:hover {
     margin: 0px 0px 0px 0px;
     padding: 0px 3px 0px 3px;
     border-radius: 20px;
+}
+
+#custom-theme {
+    background-color: #eb6f92;
+    margin: 0px 0px 0px 0px;
+    min-width: 20px;
+    padding: 0px 3px 0px 3px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+#custom-rebuild {
+    background-color: #eb6f92;
+    margin: 0px 0px 0px 0px;
+    min-width: 20px;
+    padding: 0px 3px 0px 3px;
+    border-radius: 20px;
+    font-size: 1.5rem;
 }
 
 #battery {
