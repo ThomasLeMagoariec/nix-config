@@ -1,6 +1,6 @@
 window {
     margin: 0px;
-    border: 2px solid #89b4fa;
+    border: 2px solid #1e66f5;
     background-color: #1e1e2e;
     font-family: "JetBrainsMono Nerd Font", monospace;
     font-size: 14px;
@@ -16,7 +16,7 @@ window {
 }
 
 #input:focus {
-    border: 2px solid #89b4fa;
+    border: 2px solid #8839ef;
 }
 
 #inner-box {
@@ -48,7 +48,7 @@ window {
 }
 
 #entry:selected {
-    background-color: #89b4fa;
+    background-color: #8839ef;
     color: #1e1e2e;
 }
 
