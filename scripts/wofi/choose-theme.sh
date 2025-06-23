@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Show custom options in wofi
-CHOICE=$(echo -e "rosé-pine\ncatppuccin\nnord" | wofi --dmenu --prompt "Choose theme:")
+CHOICE=$(echo -e "rosé-pine\ncatppuccin\nnord" | wofi --dmenu --prompt "Choose theme")
 
 case "$CHOICE" in
     rosé-pine)

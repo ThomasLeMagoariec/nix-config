@@ -1,7 +1,7 @@
 #!/run/current-system/sw/bin/zsh
 
 # Show custom options in wofi
-CHOICE=$(echo -e "Rebuild\nRebuild No Clean\nRebuild Nix\nRebuild Home\nRebuild rosé-pine\nRebuild catppuccin\nRebuild nord" | wofi --dmenu --prompt "Choose rebuild:")
+CHOICE=$(echo -e "Rebuild\nRebuild No Clean\nRebuild Nix\nRebuild Home\nRebuild rosé-pine\nRebuild catppuccin\nRebuild nord" | wofi --dmenu --prompt "Choose rebuild")
 
 case "$CHOICE" in
     "Rebuild")
