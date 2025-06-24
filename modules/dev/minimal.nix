@@ -16,7 +16,6 @@
 
             pyright                 # python LSP
             nix-ld
-            firefox
         ] ++ lib.optionals (host == "paul") [
             helix
         ];
