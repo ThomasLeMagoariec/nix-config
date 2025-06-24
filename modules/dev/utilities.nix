@@ -16,6 +16,7 @@
         starship
         ncurses
         libnotify
+        ffmpeg_6
     ] ++ lib.optionals (de == "i3") [
         i3lock
         i3status
