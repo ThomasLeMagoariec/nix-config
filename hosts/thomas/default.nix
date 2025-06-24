@@ -31,6 +31,6 @@ in
     ++ lib.optional lfs ../../modules/lfn;
 
     networking.hostName = "nixos";
-    system.stateVersion = "24.11";
+    system.stateVersion = "25.05";
 }
 
