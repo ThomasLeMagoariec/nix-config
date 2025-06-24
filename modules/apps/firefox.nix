@@ -17,7 +17,7 @@
 
             ExtensionSettings = {
                 "protonpass@proton.me" = {
-                    install_url = "https://addons.mozilla.org/firefox/downloads/latest/proton-pass/latest.xpi";
+                    install_url = "https://addons.mozilla.org/firefox/downloads/file/4507632/proton_pass-1.31.6.xpi";
                     installation_mode = "force_installed";
                 };
             };
