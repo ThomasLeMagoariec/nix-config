@@ -4,7 +4,6 @@
 
     home.file = {
         ".config/wofi/config".source = ../dotfiles/wofi/config;
-        ".config/wofi/style.css".source = ../dotfiles/wofi/style.css;
 
         ".bashrc".source = ../dotfiles/.bashrc;
         ".config/starship.toml".source = ../dotfiles/starship/p10k.toml;
