@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-URL=$(wofi --dmenu --prompt "Enter URL:")
+URL=$(wofi --dmenu --prompt "Enter login:")
 
 # Open in default browser if non-empty
 if [[ -n "$URL" ]]; then

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Show custom options in wofi
-CHOICE=$(echo -e "CRI\nGoogle" | wofi --dmenu --prompt "choose theme")
+CHOICE=$(echo -e "CRI\nGoogle" | wofi --dmenu --prompt "choose service")
 
 case "$CHOICE" in
     CRI)
