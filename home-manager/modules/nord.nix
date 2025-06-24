@@ -8,6 +8,7 @@
         ".config/hypr/hyprlock.conf".source = ../dotfiles/hypr/hyprlock-nord.conf;
         ".config/waybar/style.css".source = ../dotfiles/waybar/style-nord.css;
         ".config/wofi/style.css".source = ../dotfiles/wofi/style-nord.css;
+        ".config/kitty/themes/theme.conf".source = ../dotfiles/kitty/nord.conf;
     };
 
 }
