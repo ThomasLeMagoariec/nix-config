@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
 # Show custom options in wofi
-CHOICE=$(echo -e "CRI\nGoogle" | wofi --dmenu --prompt "choose service")
+CHOICE=$(echo -e "CRI\nGoogle\nNixPkgs" | wofi --dmenu --prompt "choose service")
 
 case "$CHOICE" in
     CRI)
         ./stalk.sh;; 
     Google)
         ./google.sh;;
+    NixPkgs)
+        ./nixpkgs.sh;;
     *)
         exit 1 ;;  # in case of no selection or exit
 esac
