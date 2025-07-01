@@ -7,6 +7,7 @@
         nautilus # file explorer
         blueman  # bluetooth manager gui
         libreoffice
+        jellyfin
     ];
 }
 
