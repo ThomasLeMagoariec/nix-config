@@ -18,6 +18,7 @@
         libnotify
         ffmpeg_6
         open-watcom-v2
+        qbittorrent
     ] ++ lib.optionals (de == "i3") [
         i3lock
         i3status
