@@ -8,6 +8,7 @@
         ./tools.nix
         ./utilities.nix
         ./shells/zsh.nix
+        ./grub.nix
   ];
 
   programs.nix-ld.enable = true;
