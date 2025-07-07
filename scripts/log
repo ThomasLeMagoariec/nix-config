@@ -1,0 +1,31 @@
+🔄 Updating flake inputs...
+warning: Git tree '/home/thomas/coding/nix/config' is dirty
+warning: updating lock file '"/home/thomas/coding/nix/config/flake.lock"':
+• Added input 'home-manager':
+    'github:nix-community/home-manager/fd9e55f5fac45a26f6169310afca64d56b681935?narHash=sha256-aDDC0CHTlL7QDKWWhdbEgVPK6KwWt%2Bca0QkmHYZxMzI%3D' (2025-07-06)
+• Added input 'home-manager/nixpkgs':
+    follows 'nixpkgs'
+• Added input 'nixpkgs':
+    'github:NixOS/nixpkgs/1fd8bada0b6117e6c7eb54aad5813023eed37ccb?narHash=sha256-J1kI6oAj25IG4EdVlg2hQz8NZTBNYvIS0l4wpr9KcUo%3D' (2025-07-06)
+warning: Git tree '/home/thomas/coding/nix/config' is dirty
+🪄Rebuilding NixOS for host 'thomas'...
+warning: Git tree '/home/thomas/coding/nix/config' is dirty
+warning: updating lock file '"/home/thomas/coding/nix/config/flake.lock"':
+• Added input 'home-manager':
+    'github:nix-community/home-manager/fd9e55f5fac45a26f6169310afca64d56b681935?narHash=sha256-aDDC0CHTlL7QDKWWhdbEgVPK6KwWt%2Bca0QkmHYZxMzI%3D' (2025-07-06)
+• Added input 'home-manager/nixpkgs':
+    follows 'nixpkgs'
+• Added input 'nixpkgs':
+    'github:NixOS/nixpkgs/1fd8bada0b6117e6c7eb54aad5813023eed37ccb?narHash=sha256-J1kI6oAj25IG4EdVlg2hQz8NZTBNYvIS0l4wpr9KcUo%3D' (2025-07-06)
+warning: Git tree '/home/thomas/coding/nix/config' is dirty
+building the system configuration...
+warning: Git tree '/home/thomas/coding/nix/config' is dirty
+warning: updating lock file '"/home/thomas/coding/nix/config/flake.lock"':
+• Added input 'home-manager':
+    'github:nix-community/home-manager/fd9e55f5fac45a26f6169310afca64d56b681935?narHash=sha256-aDDC0CHTlL7QDKWWhdbEgVPK6KwWt%2Bca0QkmHYZxMzI%3D' (2025-07-06)
+• Added input 'home-manager/nixpkgs':
+    follows 'nixpkgs'
+• Added input 'nixpkgs':
+    'github:NixOS/nixpkgs/1fd8bada0b6117e6c7eb54aad5813023eed37ccb?narHash=sha256-J1kI6oAj25IG4EdVlg2hQz8NZTBNYvIS0l4wpr9KcUo%3D' (2025-07-06)
+warning: Git tree '/home/thomas/coding/nix/config' is dirty
+
