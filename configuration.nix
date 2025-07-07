@@ -13,8 +13,8 @@
 
 
     # Bootloader.
-    boot.loader.systemd-boot.enable = true;
-    boot.loader.efi.canTouchEfiVariables = true;
+    #boot.loader.systemd-boot.enable = true;
+    #boot.loader.efi.canTouchEfiVariables = true;
 
     # shoud be set in the host/default.nix
     #networking.hostName = "nixos"; # Define your hostname.

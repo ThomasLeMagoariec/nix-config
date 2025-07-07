@@ -20,6 +20,9 @@ let
 in
 {
   boot.loader.grub = {
+    devices = [
+        "/dev/nvme0n1"
+    ];
     enable = true;
     version = 2;
     theme = "${catppuccin-grub-theme}/share/grub/themes/Catppuccin";
