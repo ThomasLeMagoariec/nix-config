@@ -20,11 +20,10 @@ let
 in
 {
   boot.loader.grub = {
-    devices = [
-        "/dev/nvme0n1"
-    ];
     enable = true;
-    version = 2;
+    efiSupport = true;
+    efiInstallAsRemovable = true;
+    device = "nodev"; # <- Don't use /dev/nvme0n1 for UEFI
     theme = "${catppuccin-grub-theme}/share/grub/themes/Catppuccin";
   };
 }
