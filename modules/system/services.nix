@@ -25,8 +25,8 @@
             };
             pulse = { enable = true; };
         };
-        jack = {
-            jackd.enable = true;
-        };
+        #jack = {
+        #    jackd.enable = true;
+        #};
     };
 }

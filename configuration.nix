@@ -20,6 +20,8 @@
     #networking.hostName = "nixos"; # Define your hostname.
     networking.networkmanager.enable = true; 
 
+    hardware.bluetooth.enable = true; # enables support for Bluetooth
+    hardware.bluetooth.powerOnBoot = true;
 
     security.rtkit.enable = true; # no clue what this is so won't touch it
 
