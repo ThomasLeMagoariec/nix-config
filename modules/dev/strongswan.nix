@@ -25,7 +25,7 @@
     };
     local = {
       banquise.auth = "pubkey";
-      banquise.certs = [ "/home/thomas/.secrets/strongswan/x509/thomas.le-magoariec.pem" ];
+      banquise.certs = [ "/home/thomas/.secrets/strongswan/x509/arthur.wambst.pem" ];
     };
     remote = {
       banquise.auth = "pubkey";

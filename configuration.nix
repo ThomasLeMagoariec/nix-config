@@ -35,7 +35,6 @@
     environment.systemPackages = with pkgs; [
         home-manager
         pkg-config
-        strongswan
         openssl
         autoconf
         automake

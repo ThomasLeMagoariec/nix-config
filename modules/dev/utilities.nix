@@ -19,6 +19,7 @@
         ffmpeg_6
         open-watcom-v2
         qbittorrent
+        virtualbox
     ] ++ lib.optionals (de == "i3") [
         i3lock
         i3status
