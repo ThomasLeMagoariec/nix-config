@@ -20,7 +20,7 @@ in
     [
         ../../configuration.nix
         ../../modules/dev
-    ]
+    ];
 
     networking.hostName = "nixos";
     system.stateVersion = "25.05";

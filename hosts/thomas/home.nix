@@ -10,7 +10,7 @@ in
 
     imports = [
         ../../home-manager/modules
-    ]
+    ];
 
     home.username = "thomas";
     home.homeDirectory = "/home/thomas";
