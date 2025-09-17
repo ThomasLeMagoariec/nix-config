@@ -2,13 +2,8 @@
 
 {
     imports = [
-        ./editors.nix
-        ./languages.nix
-        ./git.nix
-        ./tools.nix
-        ./utilities.nix
-        ./shells/zsh.nix
-        ./grub.nix
+      ./minimal.nix
+      ./git.nix
   ];
 
   programs.nix-ld.enable = true;

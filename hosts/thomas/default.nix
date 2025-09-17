@@ -20,15 +20,7 @@ in
     [
         ../../configuration.nix
         ../../modules/dev
-        ../../modules/apps
-        ../../modules/random
-        ../../modules/gaming
-        ../../modules/flatpak
     ]
-    ++ lib.optional (de == "hyprland") ../../modules/hyprland
-    ++ lib.optional (sh == "fish") ../../modules/dev/shells/fish.nix
-    ++ lib.optional (sh == "zsh") ../../modules/dev/shells/zsh.nix
-    ++ lib.optional lfs ../../modules/lfn;
 
     networking.hostName = "nixos";
     system.stateVersion = "25.05";
