@@ -16,9 +16,8 @@
 
             pyright                 # python LSP
             nix-ld
-        ] ++ lib.optionals (host == "paul") [
-            helix
         ];
+        programs.zsh.enable = true;
     };
 }
 

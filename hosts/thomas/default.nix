@@ -22,6 +22,26 @@ in
         ../../modules/dev
     ];
 
+  boot.loader = {
+    grub = {
+      enable                = true;
+      useOSProber           = true;
+      copyKernels           = true;
+      efiInstallAsRemovable = true;
+      efiSupport            = true;
+      fsIdentifier          = "label";
+      devices               = [ "nodev" ];
+      extraEntries = ''
+                menuentry "Reboot" {
+                    reboot
+                }
+                menuentry "Poweroff" {
+                    halt
+                }
+      '';
+    };
+  };
+
     networking.hostName = "nixos";
     system.stateVersion = "25.05";
 }
