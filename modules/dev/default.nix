@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-    imports = [
+  imports = [
       ./minimal.nix
       ./git.nix
   ];

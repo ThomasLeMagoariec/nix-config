@@ -1,23 +1,21 @@
 { config, lib, pkgs, host, ... }:
 
 {
-    options.dev.minimal.enable = lib.mkEnableOption "Enable minimal dev environment";
+    environment.systemPackages = with pkgs; [
+        neovim
+        git
+        tmux
+        kitty
+        python3                 # python 3.12.9
+        python3Packages.pip     # pip (the worlds worst package manager)
+        nodejs                  # useful for anything and everything
+        gcc11                   # C/C++
 
-    config = lib.mkIf config.dev.minimal.enable {
-        environment.systemPackages = with pkgs; [
-            neovim
-            git
-            tmux
-            kitty
-            python3                 # python 3.12.9
-            python3Packages.pip     # pip (the worlds worst package manager)
-            nodejs                  # useful for anything and everything
-            gcc11                   # C/C++
+        pyright                 # python LSP
+        nix-ld
+    ];
 
-            pyright                 # python LSP
-            nix-ld
-        ];
-        programs.zsh.enable = true;
-    };
+    programs.zsh.enable = true;
+
 }
 
