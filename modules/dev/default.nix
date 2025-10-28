@@ -6,7 +6,6 @@
       ./git.nix
   ];
 
-  options.dev.minimal.enable = true;
   programs.nix-ld.enable = true;
 }
 
