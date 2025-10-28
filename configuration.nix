@@ -1,14 +1,13 @@
 { inputs, config, pkgs, ... }:
 
 {
-    
+
     imports =
     [
         ./hardware-configuration.nix
         ./modules/system/locals.nix
         ./modules/system/users.nix
         ./modules/system/services.nix
-        ./modules/system/virtualisation.nix
     ];
 
 
@@ -18,7 +17,7 @@
 
     # shoud be set in the host/default.nix
     #networking.hostName = "nixos"; # Define your hostname.
-    networking.networkmanager.enable = true; 
+    networking.networkmanager.enable = true;
 
     hardware.bluetooth.enable = true; # enables support for Bluetooth
     hardware.bluetooth.powerOnBoot = true;
