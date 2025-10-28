@@ -20,6 +20,7 @@ in
     [
         ../../configuration.nix
         ../../modules/dev
+        ../../modules/graphical/hyprland
     ];
 
   boot.loader = {
