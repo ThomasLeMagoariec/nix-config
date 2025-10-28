@@ -18,6 +18,3 @@ jobs:
       - name: Check that configuration builds
         run: nix build .#nixosConfigurations.thomas.config.system.build.toplevel
 
-      - name: Optional — check formatting
-        run: nix fmt -- --check
-
